@@ -3,7 +3,7 @@ using FakeItEasy;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace Tests
+namespace Battleships.Core.Tests
 {
     internal class GameUnitTests
     {
