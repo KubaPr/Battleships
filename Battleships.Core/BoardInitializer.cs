@@ -11,7 +11,7 @@
 
         public Board Initialize()
         {
-            return new Board(_shipPositioner.GetPositions());
+            return new Board(_shipPositioner.CreatePositions());
         }
     }
 }

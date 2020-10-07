@@ -5,7 +5,8 @@ namespace Battleships.Core
     public class Ship
     {
         public byte NumberOfMasts { get; }
-        public bool IsSunk => _hitMastsCount == NumberOfMasts;
+        internal bool IsSunk => _hitMastsCount == NumberOfMasts;
+        internal virtual void ReportHit() => _hitMastsCount++;
 
         private byte _hitMastsCount;
 
@@ -15,11 +16,6 @@ namespace Battleships.Core
 
             NumberOfMasts = numberOfMasts;
             _hitMastsCount = 0;
-        }
-
-        public virtual void ReportHit()
-        {
-            _hitMastsCount++;
         }
     }
 }

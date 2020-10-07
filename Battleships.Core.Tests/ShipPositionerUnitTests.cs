@@ -2,8 +2,6 @@
 using FluentAssertions;
 using NUnit.Framework;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
 
 namespace Battleships.Core.Tests
 {
@@ -28,7 +26,7 @@ namespace Battleships.Core.Tests
                 .CreatePositionsForShip(A<Ship>.That.Matches(ship => ship.NumberOfMasts == 5)))
                 .Returns(fiveMastedShipPositions);
 
-            _subject.GetPositions().Should().Contain(fiveMastedShipPositions).And.HaveCount(1);
+            _subject.CreatePositions().Should().Contain(fiveMastedShipPositions).And.HaveCount(1);
         }
 
         [Test]
@@ -44,7 +42,7 @@ namespace Battleships.Core.Tests
                 .CreatePositionsForShip(A<Ship>.That.Matches(ship => ship.NumberOfMasts == 4)))
                 .Returns(anotherFourMastedShipPositions).Once();
 
-            _subject.GetPositions().Should().Contain(fourMastedShipPositions)
+            _subject.CreatePositions().Should().Contain(fourMastedShipPositions)
                 .And.Contain(anotherFourMastedShipPositions)
                 .And.HaveCount(2);
         }
@@ -59,7 +57,7 @@ namespace Battleships.Core.Tests
             A.CallTo(() => randomPositionerDouble.CreatePositionsForShip(A<Ship>._)).Returns(positions).Once();
             A.CallTo(() => randomPositionerDouble.CreatePositionsForShip(A<Ship>._)).Returns(tooClosePositions).Once();
 
-            _subject.GetPositions();
+            _subject.CreatePositions();
 
             //TODO: something about this magic number
             A.CallTo(() => randomPositionerDouble.CreatePositionsForShip(A<Ship>._)).MustHaveHappened(4, Times.Exactly);

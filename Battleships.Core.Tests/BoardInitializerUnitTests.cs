@@ -29,7 +29,7 @@ namespace Battleships.Core.Tests
         {
             _subject.Initialize();
 
-            A.CallTo(() => _shipPositionerDouble.GetPositions()).MustHaveHappened();
+            A.CallTo(() => _shipPositionerDouble.CreatePositions()).MustHaveHappened();
         }
 
         [Test]
@@ -38,7 +38,7 @@ namespace Battleships.Core.Tests
             var coordinates = new Coordinates(5, 5);
             var ship = new Ship(1);
 
-            A.CallTo(() => _shipPositionerDouble.GetPositions()).Returns(
+            A.CallTo(() => _shipPositionerDouble.CreatePositions()).Returns(
                 new List<Position>
                 {
                     new Position(coordinates, ship)

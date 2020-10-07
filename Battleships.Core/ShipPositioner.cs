@@ -13,16 +13,17 @@ namespace Battleships.Core
             _randomPositioner = randomPositioner;
         }
 
-        public virtual List<Position> GetPositions()
+        public virtual List<Position> CreatePositions()
         {
-            var positions = new List<Position>();
-
+            //TODO: to rethink. This should probably be passed to this class and created elswhere.
             var shipsToBePositioned = new List<Ship>
             {
                 new Ship(5),
                 new Ship(4),
                 new Ship(4)
             };
+
+            var positions = new List<Position>();
 
             foreach(var ship in shipsToBePositioned)
             {
