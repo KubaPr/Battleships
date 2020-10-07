@@ -33,6 +33,7 @@ namespace Battleships.Core.Tests
             var subject = new Board(
                 new List<Position>
                 {
+                    new Position(new Coordinates(0,1), null),
                     new Position(firstShot, new Ship(1)),
                     new Position(secondShot, doubleMastedShip),
                     new Position(thirdShot, doubleMastedShip)

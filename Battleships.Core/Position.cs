@@ -9,7 +9,7 @@ namespace Battleships.Core
         public Ship Occupant { get; }
         public PositionState State { get; private set; }
 
-        public Position(Coordinates coordinates, Ship occupant)
+        public Position(Coordinates coordinates, Ship occupant = null)
         {
             Coordinates = coordinates ?? throw new ArgumentNullException(nameof(coordinates));
             Occupant = occupant;

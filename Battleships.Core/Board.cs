@@ -9,10 +9,14 @@ namespace Battleships.Core
 
         public Board(List<Position> positions)
         {
+            //TODO: positions validation
             Positions = positions;
         }
 
-        public bool IsConquered => Positions.Select(position => position.Occupant).All(occupant => occupant.IsSunk);
+        public bool IsConquered => Positions
+            .Select(position => position.Occupant)
+            .Where(occupant => occupant != null)
+            .All(occupant => occupant.IsSunk);
 
         public virtual ShotResult Check(Coordinates coordinates)
         {
