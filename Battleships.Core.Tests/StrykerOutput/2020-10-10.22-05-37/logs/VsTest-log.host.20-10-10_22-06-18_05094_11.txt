@@ -1,0 +1,906 @@
+TpTrace Information: 0 : 8480, 1, 2020/10/10, 22:06:18.246, 276691013365, testhost.dll, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 62254],[--endpoint, 127.0.0.1:062254],[--role, client],[--parentprocessid, 12336],[--diag, D:\dev\sources\Battleships\Battleships.Core.Tests\StrykerOutput\2020-10-10.22-05-37\logs\VsTest-log.host.20-10-10_22-06-18_05094_11.txt],[--tracelevel, 3],[--telemetryoptedin, false]
+TpTrace Information: 0 : 8480, 1, 2020/10/10, 22:06:18.258, 276691070640, testhost.dll, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '12336'
+TpTrace Information: 0 : 8480, 1, 2020/10/10, 22:06:18.290, 276691389955, testhost.dll, DefaultEngineInvoker.GetConnectionInfo: Initialize communication on endpoint address: '127.0.0.1:062254'
+TpTrace Information: 0 : 8480, 1, 2020/10/10, 22:06:18.315, 276691637728, testhost.dll, SocketClient.Start: connecting to server endpoint: 127.0.0.1:062254
+TpTrace Information: 0 : 8480, 1, 2020/10/10, 22:06:18.327, 276691758709, testhost.dll, DefaultEngineInvoker.Invoke: Start Request Processing.
+TpTrace Information: 0 : 8480, 5, 2020/10/10, 22:06:18.333, 276691819178, testhost.dll, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:062254
+TpTrace Information: 0 : 8480, 8, 2020/10/10, 22:06:18.338, 276691870699, testhost.dll, DefaultEngineInvoker.StartProcessingAsync: Connected to vstest.console, Starting process requests.
+TpTrace Verbose: 0 : 8480, 5, 2020/10/10, 22:06:18.339, 276691872863, testhost.dll, Connected to server, and starting MessageLoopAsync
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:18.344, 276691929747, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:18.345, 276691938250, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:18.579, 276694280232, testhost.dll, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 3
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:18.643, 276694913635, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Rejestrowanie diagnostyki TestHost w pliku: D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\StrykerOutput\\2020-10-10.22-05-37\\logs\\VsTest-log.host.20-10-10_22-06-18_05094_11.txt"}}
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:18.643, 276694916102, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:18.643, 276694917293, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:18.651, 276694992984, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\NUnit3.TestAdapter.dll"
+]
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:18.651, 276694996570, testhost.dll, Execution Session Initialize.
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:18.666, 276695147750, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:18.666, 276695149205, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.670, 276695187287, testhost.dll, TestExecutorService: Loading the extensions
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:18.673, 276695220203, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithTests) -> {
+  "Tests": [
+    {
+      "Id": "e1a88544-3f86-ab1c-5b8d-68893cabedaf",
+      "FullyQualifiedName": "Battleships.Core.Tests.BoardComponentTests.WhenAllShipsAreSunk_ShouldBeConquered",
+      "DisplayName": "WhenAllShipsAreSunk_ShouldBeConquered",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardComponentTests.cs",
+      "LineNumber": 27,
+      "Properties": []
+    },
+    {
+      "Id": "c2b02bd1-51b5-febd-4b5a-a91b4b3bbddc",
+      "FullyQualifiedName": "Battleships.Core.Tests.BoardComponentTests.WhenNotAllShipsAreSunk_ShouldNotBeConquered",
+      "DisplayName": "WhenNotAllShipsAreSunk_ShouldNotBeConquered",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardComponentTests.cs",
+      "LineNumber": 11,
+      "Properties": []
+    },
+    {
+      "Id": "04078574-0144-5326-f0a4-d381eddd1921",
+      "FullyQualifiedName": "Battleships.Core.Tests.BoardInitializerUnitTests.ShouldPutPositionsOnBoard",
+      "DisplayName": "ShouldPutPositionsOnBoard",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardInitializerUnitTests.cs",
+      "LineNumber": 37,
+      "Properties": []
+    },
+    {
+      "Id": "42306ab1-d652-55e2-6a19-3d94f45d11de",
+      "FullyQualifiedName": "Battleships.Core.Tests.PositionUnitTests.WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant",
+      "DisplayName": "WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs",
+      "LineNumber": 71,
+      "Properties": []
+    },
+    {
+      "Id": "e1ff25e2-f7f0-427f-34d2-da9719149381",
+      "FullyQualifiedName": "Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed",
+      "DisplayName": "WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs",
+      "LineNumber": 50,
+      "Properties": []
+    },
+    {
+      "Id": "a56506a0-9d45-cb82-27c4-d39abc3726ac",
+      "FullyQualifiedName": "Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant",
+      "DisplayName": "WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs",
+      "LineNumber": 60,
+      "Properties": []
+    },
+    {
+      "Id": "b6ed1013-e41d-11fa-0ae5-953b52f224fa",
+      "FullyQualifiedName": "Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit",
+      "DisplayName": "WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs",
+      "LineNumber": 40,
+      "Properties": []
+    },
+    {
+      "Id": "90f07aca-9088-2b2d-a271-e823ed14b082",
+      "FullyQualifiedName": "Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnAsManyPositionsAsMasts",
+      "DisplayName": "ShouldReturnAsManyPositionsAsMasts",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs",
+      "LineNumber": 106,
+      "Properties": []
+    },
+    {
+      "Id": "f732f485-69a0-5593-d74c-cd948bbc77b1",
+      "FullyQualifiedName": "Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnShipWithAllPositions",
+      "DisplayName": "ShouldReturnShipWithAllPositions",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs",
+      "LineNumber": 97,
+      "Properties": []
+    },
+    {
+      "Id": "cbcf4dfb-ecf8-c5f1-cf31-b85d7d2583ca",
+      "FullyQualifiedName": "Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize",
+      "DisplayName": "WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs",
+      "LineNumber": 61,
+      "Properties": []
+    },
+    {
+      "Id": "aa9f5a4c-b0b9-ddc5-8c88-697d27b95746",
+      "FullyQualifiedName": "Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne",
+      "DisplayName": "WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs",
+      "LineNumber": 51,
+      "Properties": []
+    },
+    {
+      "Id": "49ca8315-298a-baf3-6c13-a5349d497b08",
+      "FullyQualifiedName": "Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne",
+      "DisplayName": "WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs",
+      "LineNumber": 74,
+      "Properties": []
+    },
+    {
+      "Id": "a9741f8a-eecc-569c-0c13-cac0c69ce158",
+      "FullyQualifiedName": "Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize",
+      "DisplayName": "WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs",
+      "LineNumber": 84,
+      "Properties": []
+    },
+    {
+      "Id": "bd0d2354-695e-bf9d-cd7a-458a6e4be860",
+      "FullyQualifiedName": "Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsFalse_ShouldPlaceShipVertically",
+      "DisplayName": "WhenRandomBoolIsFalse_ShouldPlaceShipVertically",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs",
+      "LineNumber": 39,
+      "Properties": []
+    },
+    {
+      "Id": "49df6640-e5aa-83fe-4934-9b693fae0777",
+      "FullyQualifiedName": "Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally",
+      "DisplayName": "WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs",
+      "LineNumber": 27,
+      "Properties": []
+    },
+    {
+      "Id": "45fb9af0-bbee-33b2-8bfa-2bbce08fe788",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.ShouldPutTwoFourMastedShipsRandomly",
+      "DisplayName": "ShouldPutTwoFourMastedShipsRandomly",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 35,
+      "Properties": []
+    },
+    {
+      "Id": "122301fe-fdb3-0b63-3616-be926b50d346",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2)",
+      "DisplayName": "WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 90,
+      "Properties": []
+    },
+    {
+      "Id": "b92b36fa-d333-f460-967e-504f714eb8d5",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0)",
+      "DisplayName": "WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 90,
+      "Properties": []
+    },
+    {
+      "Id": "1e22f1d4-7bcd-2590-d3c8-8316481454a1",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7)",
+      "DisplayName": "WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 90,
+      "Properties": []
+    },
+    {
+      "Id": "710fbf73-31f3-b20e-c57f-f32dc647920c",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9)",
+      "DisplayName": "WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 90,
+      "Properties": []
+    },
+    {
+      "Id": "ca023ff9-d1ec-1dfa-15c0-8f163d9a689c",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0)",
+      "DisplayName": "WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 64,
+      "Properties": []
+    },
+    {
+      "Id": "bb4d1527-d99d-12de-dade-2a10e0fc9213",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1)",
+      "DisplayName": "WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 64,
+      "Properties": []
+    },
+    {
+      "Id": "ebf4a8de-a9b5-2e22-eaae-748373c7dda7",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0)",
+      "DisplayName": "WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 64,
+      "Properties": []
+    },
+    {
+      "Id": "aa901ec1-f6ad-9fae-e942-17dcf78de4d0",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1)",
+      "DisplayName": "WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 64,
+      "Properties": []
+    },
+    {
+      "Id": "94ace69e-aacf-8c9d-ccbd-1f9b4cc31fd8",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9)",
+      "DisplayName": "WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 64,
+      "Properties": []
+    },
+    {
+      "Id": "19a173c5-98a8-a1fa-5bee-b3e60d83faef",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8)",
+      "DisplayName": "WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 64,
+      "Properties": []
+    },
+    {
+      "Id": "7e505d93-4c16-3a64-bbd3-8ad4f38686fc",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9)",
+      "DisplayName": "WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 64,
+      "Properties": []
+    },
+    {
+      "Id": "29c04653-a483-cce1-e729-955c83dbdd73",
+      "FullyQualifiedName": "Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8)",
+      "DisplayName": "WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8)",
+      "ExecutorUri": "executor://NUnit3TestExecutor",
+      "Source": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll",
+      "CodeFilePath": "D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs",
+      "LineNumber": 64,
+      "Properties": []
+    }
+  ],
+  "RunSettings": "<RunSettings>\r\n  <RunConfiguration>\r\n    <MaxCpuCount>1</MaxCpuCount>\r\n    <TargetFrameworkVersion>.NETCoreApp,Version=v3.1</TargetFrameworkVersion>\r\n    <TestSessionTimeout>10236</TestSessionTimeout>\r\n    <CollectDataForEachTestSeparately>true</CollectDataForEachTestSeparately>\r\n    <DesignMode>false</DesignMode>\r\n    <BatchSize>1</BatchSize>\r\n    <TargetPlatform>X64</TargetPlatform>\r\n    <CollectSourceInformation>True</CollectSourceInformation>\r\n  </RunConfiguration>\r\n  <InProcDataCollectionRunSettings>\r\n    <InProcDataCollectors>\r\n      <InProcDataCollector friendlyName=\"StrykerCoverage\" uri=\"https://stryker-mutator.io/\" codebase=\"C:\\Users\\kubap\\.dotnet\\tools\\.store\\dotnet-stryker\\0.19.0\\dotnet-stryker\\0.19.0\\tools\\netcoreapp3.1\\any\\Stryker.DataCollector.dll\" assemblyQualifiedName=\"Stryker.DataCollector.CoverageCollector, Stryker.DataCollector, Version=0.16.1.0, Culture=neutral, PublicKeyToken=null\">\r\n        <Configuration>\r\n          <Parameters>\r\n            <Mutant id=\"36\" tests=\"45fb9af0-bbee-33b2-8bfa-2bbce08fe788,122301fe-fdb3-0b63-3616-be926b50d346,b92b36fa-d333-f460-967e-504f714eb8d5,1e22f1d4-7bcd-2590-d3c8-8316481454a1,710fbf73-31f3-b20e-c57f-f32dc647920c,ca023ff9-d1ec-1dfa-15c0-8f163d9a689c,bb4d1527-d99d-12de-dade-2a10e0fc9213,ebf4a8de-a9b5-2e22-eaae-748373c7dda7,aa901ec1-f6ad-9fae-e942-17dcf78de4d0,94ace69e-aacf-8c9d-ccbd-1f9b4cc31fd8,19a173c5-98a8-a1fa-5bee-b3e60d83faef,7e505d93-4c16-3a64-bbd3-8ad4f38686fc,29c04653-a483-cce1-e729-955c83dbdd73\" />\r\n            <Mutant id=\"20\" tests=\"90f07aca-9088-2b2d-a271-e823ed14b082,f732f485-69a0-5593-d74c-cd948bbc77b1,cbcf4dfb-ecf8-c5f1-cf31-b85d7d2583ca,aa9f5a4c-b0b9-ddc5-8c88-697d27b95746,49ca8315-298a-baf3-6c13-a5349d497b08,a9741f8a-eecc-569c-0c13-cac0c69ce158,bd0d2354-695e-bf9d-cd7a-458a6e4be860,49df6640-e5aa-83fe-4934-9b693fae0777\" />\r\n            <Mutant id=\"9\" tests=\"e1a88544-3f86-ab1c-5b8d-68893cabedaf,c2b02bd1-51b5-febd-4b5a-a91b4b3bbddc,04078574-0144-5326-f0a4-d381eddd1921,42306ab1-d652-55e2-6a19-3d94f45d11de,e1ff25e2-f7f0-427f-34d2-da9719149381,a56506a0-9d45-cb82-27c4-d39abc3726ac,b6ed1013-e41d-11fa-0ae5-953b52f224fa\" />\r\n            <MutantControl name=\"StrykerZs2foo2J1fWkpW2.MutantControl\" />\r\n          </Parameters>\r\n        </Configuration>\r\n      </InProcDataCollector>\r\n    </InProcDataCollectors>\r\n  </InProcDataCollectionRunSettings>\r\n  <LoggerRunSettings>\r\n    <Loggers>\r\n      <Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Users\\kubap\\AppData\\Local\\Temp\\wkiw115u.nka\\.vstest\\tools\\net451\\vstest.console.exe\" enabled=\"True\" />\r\n    </Loggers>\r\n  </LoggerRunSettings>\r\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 1,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:18.677, 276695257638, testhost.dll, Execution started.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.686, 276695352469, testhost.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories D:\dev\sources\Battleships\Battleships.Core.Tests\bin\Debug\netcoreapp3.1
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.689, 276695375944, testhost.dll, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.692, 276695408239, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories D:\dev\sources\Battleships\Battleships.Core.Tests\bin\Debug\netcoreapp3.1
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.699, 276695480836, testhost.dll, AssemblyResolver.OnResolve: NUnit3.TestAdapter: Resolving assembly.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.702, 276695506838, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: NUnit3.TestAdapter, from path: D:\dev\sources\Battleships\Battleships.Core.Tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.705, 276695536685, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.netstandard: Resolving assembly.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.706, 276695546898, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.netstandard, from path: D:\dev\sources\Battleships\Battleships.Core.Tests\bin\Debug\netcoreapp3.1\nunit.engine.netstandard.dll
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.715, 276695633698, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.716, 276695643930, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.716, 276695645834, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.716, 276695647259, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.716, 276695648514, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.728, 276695764868, testhost.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.729, 276695773655, testhost.dll, TestExecutorExtensionManager: Loading executor NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.729, 276695775168, testhost.dll, TestExecutorService: Loaded the executors
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.731, 276695797325, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories D:\dev\sources\Battleships\Battleships.Core.Tests\bin\Debug\netcoreapp3.1
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.731, 276695798633, testhost.dll, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.731, 276695799455, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories D:\dev\sources\Battleships\Battleships.Core.Tests\bin\Debug\netcoreapp3.1
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.732, 276695804070, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.732, 276695805126, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.732, 276695805846, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.732, 276695806827, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.732, 276695807325, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.734, 276695824034, testhost.dll, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.734, 276695825176, testhost.dll, TestExecutorService: Loaded the extensions
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:18.744, 276695930268, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.795, 276696438977, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources: Resolving assembly.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.795, 276696441794, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources: Failed to load assembly.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.815, 276696637254, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources: Resolving assembly.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.815, 276696639356, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources: Failed to load assembly.
+TpTrace Warning: 0 : 8480, 4, 2020/10/10, 22:06:18.816, 276696648370, testhost.dll, Nieprawidłowe ustawienia „RunConfiguration”. Nieoczekiwany atrybut XmlElement: „CollectDataForEachTestSeparately”.
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.888, 276697365195, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.912, 276697607967, testhost.dll, NUnit Adapter 3.10.0.21: Test execution started
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.912, 276697609895, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.10.0.21: Test execution started"}}
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.930, 276697783390, testhost.dll, Running selected tests in D:\dev\sources\Battleships\Battleships.Core.Tests\bin\Debug\netcoreapp3.1\Battleships.Core.Tests.dll
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:18.930, 276697785591, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Running selected tests in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll"}}
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.939, 276697876505, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Resolving assembly.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:18.949, 276697979436, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: Mono.Cecil, from path: D:\dev\sources\Battleships\Battleships.Core.Tests\bin\Debug\netcoreapp3.1\Mono.Cecil.dll
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:19.199, 276700478323, testhost.dll, NUnit3TestExecutor converted 45 of 45 NUnit test cases
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:19.199, 276700480118, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit3TestExecutor converted 45 of 45 NUnit test cases"}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.248, 276700970830, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.BoardComponentTests.WhenAllShipsAreSunk_ShouldBeConquered.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.252, 276701003305, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.295, 276701437370, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":0,"Stats":{}},"ActiveTests":[{"Id":"e1a88544-3f86-ab1c-5b8d-68893cabedaf","FullyQualifiedName":"Battleships.Core.Tests.BoardComponentTests.WhenAllShipsAreSunk_ShouldBeConquered","DisplayName":"WhenAllShipsAreSunk_ShouldBeConquered","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardComponentTests.cs","LineNumber":27,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.295, 276701441139, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.513, 276703618491, testhost.dll, AssemblyResolver.OnResolve: nspec: Resolving assembly.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.513, 276703620959, testhost.dll, AssemblyResolver.OnResolve: nspec: Failed to load assembly.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.546, 276703946235, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.BoardComponentTests.WhenAllShipsAreSunk_ShouldBeConquered execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.547, 276703953686, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.552, 276704006641, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.BoardComponentTests.WhenAllShipsAreSunk_ShouldBeConquered.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.555, 276704034312, testhost.dll, No DataCollection Data set for the test case e1a88544-3f86-ab1c-5b8d-68893cabedaf
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.559, 276704077578, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.562, 276704110571, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenAllShipsAreSunk_ShouldBeConquered  Niepowodzenie
+  Komunikat: Expected subject.IsConquered to be true, but found False.
+  Ślad stosu:
+   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Primitives.BooleanAssertions`1.BeTrue(String because, Object[] becauseArgs)
+   at Battleships.Core.Tests.BoardComponentTests.WhenAllShipsAreSunk_ShouldBeConquered() in D:\dev\sources\Battleships\Battleships.Core.Tests\BoardComponentTests.cs:line 46
+' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.563, 276704116105, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.581, 276704293739, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"e1a88544-3f86-ab1c-5b8d-68893cabedaf","FullyQualifiedName":"Battleships.Core.Tests.BoardComponentTests.WhenAllShipsAreSunk_ShouldBeConquered","DisplayName":"WhenAllShipsAreSunk_ShouldBeConquered","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardComponentTests.cs","LineNumber":27,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"Expected subject.IsConquered to be true, but found False.","ErrorStackTrace":"   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)\r\n   at FluentAssertions.Primitives.BooleanAssertions`1.BeTrue(String because, Object[] becauseArgs)\r\n   at Battleships.Core.Tests.BoardComponentTests.WhenAllShipsAreSunk_ShouldBeConquered() in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardComponentTests.cs:line 46\r\n","DisplayName":"WhenAllShipsAreSunk_ShouldBeConquered","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.2264190","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Failed":1}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.581, 276704296517, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.592, 276704411071, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.BoardComponentTests.WhenNotAllShipsAreSunk_ShouldNotBeConquered.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.593, 276704413069, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.593, 276704416698, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Failed":1}},"ActiveTests":[{"Id":"c2b02bd1-51b5-febd-4b5a-a91b4b3bbddc","FullyQualifiedName":"Battleships.Core.Tests.BoardComponentTests.WhenNotAllShipsAreSunk_ShouldNotBeConquered","DisplayName":"WhenNotAllShipsAreSunk_ShouldNotBeConquered","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardComponentTests.cs","LineNumber":11,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.594, 276704425309, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.596, 276704447804, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.BoardComponentTests.WhenNotAllShipsAreSunk_ShouldNotBeConquered execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.596, 276704449737, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.596, 276704451315, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.BoardComponentTests.WhenNotAllShipsAreSunk_ShouldNotBeConquered.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.597, 276704452762, testhost.dll, No DataCollection Data set for the test case c2b02bd1-51b5-febd-4b5a-a91b4b3bbddc
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.597, 276704453408, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.597, 276704455863, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenNotAllShipsAreSunk_ShouldNotBeConquered  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.597, 276704456606, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.597, 276704460232, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"c2b02bd1-51b5-febd-4b5a-a91b4b3bbddc","FullyQualifiedName":"Battleships.Core.Tests.BoardComponentTests.WhenNotAllShipsAreSunk_ShouldNotBeConquered","DisplayName":"WhenNotAllShipsAreSunk_ShouldNotBeConquered","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardComponentTests.cs","LineNumber":11,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenNotAllShipsAreSunk_ShouldNotBeConquered","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0011850","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":2,"Stats":{"Failed":1,"Passed":1}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.597, 276704462071, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.602, 276704506792, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.BoardInitializerUnitTests.ShouldPutPositionsOnBoard.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.602, 276704508444, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.602, 276704510604, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":2,"Stats":{"Failed":1,"Passed":1}},"ActiveTests":[{"Id":"04078574-0144-5326-f0a4-d381eddd1921","FullyQualifiedName":"Battleships.Core.Tests.BoardInitializerUnitTests.ShouldPutPositionsOnBoard","DisplayName":"ShouldPutPositionsOnBoard","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardInitializerUnitTests.cs","LineNumber":37,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.602, 276704512455, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:19.744, 276705922863, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.884, 276707326018, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.BoardInitializerUnitTests.ShouldPutPositionsOnBoard execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.884, 276707327427, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.884, 276707328431, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.BoardInitializerUnitTests.ShouldPutPositionsOnBoard.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.884, 276707329071, testhost.dll, No DataCollection Data set for the test case 04078574-0144-5326-f0a4-d381eddd1921
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.884, 276707329606, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.884, 276707330113, testhost.dll, TestRunCache: No test found corresponding to testResult 'ShouldPutPositionsOnBoard  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.884, 276707330567, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.885, 276707333361, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"04078574-0144-5326-f0a4-d381eddd1921","FullyQualifiedName":"Battleships.Core.Tests.BoardInitializerUnitTests.ShouldPutPositionsOnBoard","DisplayName":"ShouldPutPositionsOnBoard","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\BoardInitializerUnitTests.cs","LineNumber":37,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"ShouldPutPositionsOnBoard","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.2808240","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":3,"Stats":{"Failed":1,"Passed":2}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.885, 276707335282, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.886, 276707347385, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.PositionUnitTests.WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.886, 276707348886, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.886, 276707351129, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":3,"Stats":{"Failed":1,"Passed":2}},"ActiveTests":[{"Id":"42306ab1-d652-55e2-6a19-3d94f45d11de","FullyQualifiedName":"Battleships.Core.Tests.PositionUnitTests.WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant","DisplayName":"WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs","LineNumber":71,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.887, 276707352785, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.902, 276707502729, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.PositionUnitTests.WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.902, 276707503886, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.903, 276707514305, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.PositionUnitTests.WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.903, 276707516232, testhost.dll, No DataCollection Data set for the test case 42306ab1-d652-55e2-6a19-3d94f45d11de
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.903, 276707516876, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.903, 276707517411, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.903, 276707517892, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.903, 276707520492, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"42306ab1-d652-55e2-6a19-3d94f45d11de","FullyQualifiedName":"Battleships.Core.Tests.PositionUnitTests.WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant","DisplayName":"WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs","LineNumber":71,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenAlreadyMarkedAsChecked_AndHasOccupant_ShouldNotReportHitToOccupant","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0145460","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":4,"Stats":{"Failed":1,"Passed":3}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.904, 276707523452, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.904, 276707525467, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.904, 276707526227, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.904, 276707528771, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":4,"Stats":{"Failed":1,"Passed":3}},"ActiveTests":[{"Id":"e1ff25e2-f7f0-427f-34d2-da9719149381","FullyQualifiedName":"Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed","DisplayName":"WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs","LineNumber":50,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.905, 276707537414, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.912, 276707606859, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.912, 276707607908, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.912, 276707608771, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.912, 276707609619, testhost.dll, No DataCollection Data set for the test case e1ff25e2-f7f0-427f-34d2-da9719149381
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.912, 276707610148, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.912, 276707610665, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed  Niepowodzenie
+  Komunikat: System.NullReferenceException : Object reference not set to an instance of an object.
+  Ślad stosu:
+   at Battleships.Core.Position.MarkAsChecked()
+   at Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed() in D:\dev\sources\Battleships\Battleships.Core.Tests\PositionUnitTests.cs:line 53' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.912, 276707611303, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.913, 276707614296, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"e1ff25e2-f7f0-427f-34d2-da9719149381","FullyQualifiedName":"Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed","DisplayName":"WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs","LineNumber":50,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"System.NullReferenceException : Object reference not set to an instance of an object.","ErrorStackTrace":"   at Battleships.Core.Position.MarkAsChecked()\r\n   at Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed() in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs:line 53","DisplayName":"WhenMarkingAsChecked_AndDoesNotHaveOccupant_ShouldStateBeMissed","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0060960","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":5,"Stats":{"Failed":2,"Passed":3}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.913, 276707615995, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.913, 276707617373, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.913, 276707618012, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.914, 276707625569, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":5,"Stats":{"Failed":2,"Passed":3}},"ActiveTests":[{"Id":"a56506a0-9d45-cb82-27c4-d39abc3726ac","FullyQualifiedName":"Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant","DisplayName":"WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs","LineNumber":60,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.914, 276707627862, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.946, 276707948852, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.946, 276707950021, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.946, 276707951030, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.946, 276707951753, testhost.dll, No DataCollection Data set for the test case a56506a0-9d45-cb82-27c4-d39abc3726ac
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.947, 276707952571, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.947, 276707953216, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant  Niepowodzenie
+  Komunikat: FakeItEasy.ExpectationException : 
+
+  Assertion failed for the following call:
+    Battleships.Core.Ship.ReportHit()
+  Expected to find it once or more but no calls were made to the fake object.
+
+
+  Ślad stosu:
+   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Core\FakeAsserter.cs:line 42
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 173
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 148
+   at FakeItEasy.AssertConfigurationExtensions.MustHaveHappened(IAssertConfiguration configuration) in C:\projects\fakeiteasy\src\FakeItEasy\AssertConfigurationExtensions.cs:line 19
+   at Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant() in D:\dev\sources\Battleships\Battleships.Core.Tests\PositionUnitTests.cs:line 66' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.947, 276707954197, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.947, 276707956725, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"a56506a0-9d45-cb82-27c4-d39abc3726ac","FullyQualifiedName":"Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant","DisplayName":"WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs","LineNumber":60,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"FakeItEasy.ExpectationException : \r\n\r\n  Assertion failed for the following call:\r\n    Battleships.Core.Ship.ReportHit()\r\n  Expected to find it once or more but no calls were made to the fake object.\r\n\r\n","ErrorStackTrace":"   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Core\\FakeAsserter.cs:line 42\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 173\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 148\r\n   at FakeItEasy.AssertConfigurationExtensions.MustHaveHappened(IAssertConfiguration configuration) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\AssertConfigurationExtensions.cs:line 19\r\n   at Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant() in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs:line 66","DisplayName":"WhenMarkingAsChecked_AndHasOccupant_ShouldReportHitToOccupant","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0311600","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":6,"Stats":{"Failed":3,"Passed":3}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.947, 276707958964, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.947, 276707960504, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.947, 276707961205, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.948, 276707963723, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":6,"Stats":{"Failed":3,"Passed":3}},"ActiveTests":[{"Id":"b6ed1013-e41d-11fa-0ae5-953b52f224fa","FullyQualifiedName":"Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit","DisplayName":"WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs","LineNumber":40,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.948, 276707965105, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.951, 276708000385, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.951, 276708001476, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.952, 276708003633, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.952, 276708004539, testhost.dll, No DataCollection Data set for the test case b6ed1013-e41d-11fa-0ae5-953b52f224fa
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.952, 276708005223, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.952, 276708005817, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit  Niepowodzenie
+  Komunikat: Expected subject.State to be Hit, but found Miss.
+  Ślad stosu:
+   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Primitives.ObjectAssertions.Be(Object expected, String because, Object[] becauseArgs)
+   at Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit() in D:\dev\sources\Battleships\Battleships.Core.Tests\PositionUnitTests.cs:line 45
+' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.952, 276708006694, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.952, 276708009005, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"b6ed1013-e41d-11fa-0ae5-953b52f224fa","FullyQualifiedName":"Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit","DisplayName":"WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs","LineNumber":40,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"Expected subject.State to be Hit, but found Miss.","ErrorStackTrace":"   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)\r\n   at FluentAssertions.Primitives.ObjectAssertions.Be(Object expected, String because, Object[] becauseArgs)\r\n   at Battleships.Core.Tests.PositionUnitTests.WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit() in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\PositionUnitTests.cs:line 45\r\n","DisplayName":"WhenMarkingAsChecked_AndHasOccupant_ShouldStateBeHit","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0025680","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":7,"Stats":{"Failed":4,"Passed":3}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.952, 276708012056, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.953, 276708020230, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnAsManyPositionsAsMasts.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.953, 276708021452, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.954, 276708024401, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":7,"Stats":{"Failed":4,"Passed":3}},"ActiveTests":[{"Id":"90f07aca-9088-2b2d-a271-e823ed14b082","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnAsManyPositionsAsMasts","DisplayName":"ShouldReturnAsManyPositionsAsMasts","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":106,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.954, 276708026048, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.983, 276708319573, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnAsManyPositionsAsMasts execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.983, 276708320673, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.983, 276708321561, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnAsManyPositionsAsMasts.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.984, 276708322781, testhost.dll, No DataCollection Data set for the test case 90f07aca-9088-2b2d-a271-e823ed14b082
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.984, 276708323802, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.984, 276708324457, testhost.dll, TestRunCache: No test found corresponding to testResult 'ShouldReturnAsManyPositionsAsMasts  Niepowodzenie
+  Komunikat: Expected _subject.GeneratePositionsForShip(ship) {empty} to contain 3 item(s), but found 0.
+  Ślad stosu:
+   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Collections.SelfReferencingCollectionAssertions`3.HaveCount(Int32 expected, String because, Object[] becauseArgs)
+   at Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnAsManyPositionsAsMasts() in D:\dev\sources\Battleships\Battleships.Core.Tests\RandomPositionerUnitTests.cs:line 111
+' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.984, 276708326111, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.984, 276708328683, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"90f07aca-9088-2b2d-a271-e823ed14b082","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnAsManyPositionsAsMasts","DisplayName":"ShouldReturnAsManyPositionsAsMasts","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":106,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"Expected _subject.GeneratePositionsForShip(ship) {empty} to contain 3 item(s), but found 0.","ErrorStackTrace":"   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)\r\n   at FluentAssertions.Collections.SelfReferencingCollectionAssertions`3.HaveCount(Int32 expected, String because, Object[] becauseArgs)\r\n   at Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnAsManyPositionsAsMasts() in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs:line 111\r\n","DisplayName":"ShouldReturnAsManyPositionsAsMasts","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0285930","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":8,"Stats":{"Failed":5,"Passed":3}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.984, 276708330480, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.984, 276708332309, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnShipWithAllPositions.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.985, 276708332929, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.985, 276708340945, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":8,"Stats":{"Failed":5,"Passed":3}},"ActiveTests":[{"Id":"f732f485-69a0-5593-d74c-cd948bbc77b1","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnShipWithAllPositions","DisplayName":"ShouldReturnShipWithAllPositions","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":97,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.986, 276708343134, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.988, 276708364891, testhost.dll, AssemblyResolver.OnResolve: System.Linq.resources: Resolving assembly.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.988, 276708366715, testhost.dll, AssemblyResolver.OnResolve: System.Linq.resources: Failed to load assembly.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.988, 276708369470, testhost.dll, AssemblyResolver.OnResolve: System.Linq.resources: Resolving assembly.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.988, 276708370295, testhost.dll, AssemblyResolver.OnResolve: System.Linq.resources: Resolved from cache.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.991, 276708395132, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnShipWithAllPositions execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.991, 276708396822, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.991, 276708397784, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnShipWithAllPositions.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.991, 276708398410, testhost.dll, No DataCollection Data set for the test case f732f485-69a0-5593-d74c-cd948bbc77b1
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.991, 276708398951, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:19.991, 276708399546, testhost.dll, TestRunCache: No test found corresponding to testResult 'ShouldReturnShipWithAllPositions  Niepowodzenie
+  Komunikat: System.InvalidOperationException : Sequence contains no elements
+  Ślad stosu:
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnShipWithAllPositions() in D:\dev\sources\Battleships\Battleships.Core.Tests\RandomPositionerUnitTests.cs:line 100' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.991, 276708400114, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.992, 276708402589, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"f732f485-69a0-5593-d74c-cd948bbc77b1","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnShipWithAllPositions","DisplayName":"ShouldReturnShipWithAllPositions","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":97,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"System.InvalidOperationException : Sequence contains no elements","ErrorStackTrace":"   at System.Linq.ThrowHelper.ThrowNoElementsException()\r\n   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)\r\n   at Battleships.Core.Tests.RandomPositionerUnitTests.ShouldReturnShipWithAllPositions() in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs:line 100","DisplayName":"ShouldReturnShipWithAllPositions","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0045540","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:19+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":9,"Stats":{"Failed":6,"Passed":3}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.992, 276708404673, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.992, 276708406152, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:19.992, 276708406843, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.993, 276708414298, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":9,"Stats":{"Failed":6,"Passed":3}},"ActiveTests":[{"Id":"cbcf4dfb-ecf8-c5f1-cf31-b85d7d2583ca","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","DisplayName":"WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":61,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:19.993, 276708416415, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.008, 276708568422, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.008, 276708569615, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.008, 276708570959, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.008, 276708571674, testhost.dll, No DataCollection Data set for the test case cbcf4dfb-ecf8-c5f1-cf31-b85d7d2583ca
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.008, 276708572418, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.009, 276708573018, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.009, 276708573568, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.009, 276708575961, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"cbcf4dfb-ecf8-c5f1-cf31-b85d7d2583ca","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","DisplayName":"WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":61,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0147130","StartTime":"2020-10-10T20:06:19+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":10,"Stats":{"Failed":6,"Passed":4}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.009, 276708577951, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.009, 276708579769, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.009, 276708580433, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.010, 276708582815, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":10,"Stats":{"Failed":6,"Passed":4}},"ActiveTests":[{"Id":"aa9f5a4c-b0b9-ddc5-8c88-697d27b95746","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne","DisplayName":"WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":51,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.010, 276708584296, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.012, 276708607856, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.012, 276708608999, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.012, 276708610029, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.012, 276708610853, testhost.dll, No DataCollection Data set for the test case aa9f5a4c-b0b9-ddc5-8c88-697d27b95746
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.012, 276708611511, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.012, 276708612251, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.013, 276708612759, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.013, 276708615698, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"aa9f5a4c-b0b9-ddc5-8c88-697d27b95746","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne","DisplayName":"WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":51,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenPlacingShipHorizontally_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOne","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0017980","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":11,"Stats":{"Failed":6,"Passed":5}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.013, 276708618177, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.013, 276708621057, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.014, 276708623447, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.014, 276708629064, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":11,"Stats":{"Failed":6,"Passed":5}},"ActiveTests":[{"Id":"49ca8315-298a-baf3-6c13-a5349d497b08","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne","DisplayName":"WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":74,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.014, 276708631033, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.017, 276708659343, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.017, 276708660513, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.017, 276708661456, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.017, 276708662431, testhost.dll, No DataCollection Data set for the test case 49ca8315-298a-baf3-6c13-a5349d497b08
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.018, 276708663047, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.018, 276708663616, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.018, 276708664157, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.018, 276708667192, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"49ca8315-298a-baf3-6c13-a5349d497b08","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne","DisplayName":"WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":74,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenPlacingShipVertically_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOne","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0022850","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":12,"Stats":{"Failed":6,"Passed":6}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.018, 276708669032, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.018, 276708670466, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.018, 276708671135, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.019, 276708677975, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":12,"Stats":{"Failed":6,"Passed":6}},"ActiveTests":[{"Id":"a9741f8a-eecc-569c-0c13-cac0c69ce158","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","DisplayName":"WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":84,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.019, 276708679791, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.022, 276708708155, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.022, 276708709308, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.022, 276708710282, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.022, 276708710884, testhost.dll, No DataCollection Data set for the test case a9741f8a-eecc-569c-0c13-cac0c69ce158
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.022, 276708711377, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.022, 276708711883, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.023, 276708712677, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.023, 276708715103, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"a9741f8a-eecc-569c-0c13-cac0c69ce158","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","DisplayName":"WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":84,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0023100","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":13,"Stats":{"Failed":6,"Passed":7}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.023, 276708716808, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.023, 276708718148, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsFalse_ShouldPlaceShipVertically.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.023, 276708718759, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.023, 276708720786, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":13,"Stats":{"Failed":6,"Passed":7}},"ActiveTests":[{"Id":"bd0d2354-695e-bf9d-cd7a-458a6e4be860","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsFalse_ShouldPlaceShipVertically","DisplayName":"WhenRandomBoolIsFalse_ShouldPlaceShipVertically","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":39,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.023, 276708722238, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.079, 276709280096, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsFalse_ShouldPlaceShipVertically execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.079, 276709281441, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.080, 276709283220, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsFalse_ShouldPlaceShipVertically.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.080, 276709284221, testhost.dll, No DataCollection Data set for the test case bd0d2354-695e-bf9d-cd7a-458a6e4be860
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.080, 276709284981, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.080, 276709285783, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenRandomBoolIsFalse_ShouldPlaceShipVertically  Niepowodzenie
+  Komunikat: Expected subject to be a collection with 3 item(s), but found an empty collection.
+
+With configuration:
+- Use declared types and members
+- Compare enums by value
+- Include all non-private properties
+- Include all non-private fields
+- Match member by name (or throw)
+- Be strict about the order of items in byte arrays
+- Without automatic conversion.
+
+  Ślad stosu:
+   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)
+   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)
+   at FluentAssertions.Collections.CollectionAssertions`2.BeEquivalentTo[TExpectation](IEnumerable`1 expectation, Func`2 config, String because, Object[] becauseArgs)
+   at FluentAssertions.Collections.CollectionAssertions`2.BeEquivalentTo(Object[] expectations)
+   at Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsFalse_ShouldPlaceShipVertically() in D:\dev\sources\Battleships\Battleships.Core.Tests\RandomPositionerUnitTests.cs:line 45
+' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.080, 276709286765, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.080, 276709290163, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"bd0d2354-695e-bf9d-cd7a-458a6e4be860","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsFalse_ShouldPlaceShipVertically","DisplayName":"WhenRandomBoolIsFalse_ShouldPlaceShipVertically","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":39,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"Expected subject to be a collection with 3 item(s), but found an empty collection.\r\n\r\nWith configuration:\r\n- Use declared types and members\r\n- Compare enums by value\r\n- Include all non-private properties\r\n- Include all non-private fields\r\n- Match member by name (or throw)\r\n- Be strict about the order of items in byte arrays\r\n- Without automatic conversion.\r\n","ErrorStackTrace":"   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)\r\n   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)\r\n   at FluentAssertions.Collections.CollectionAssertions`2.BeEquivalentTo[TExpectation](IEnumerable`1 expectation, Func`2 config, String because, Object[] becauseArgs)\r\n   at FluentAssertions.Collections.CollectionAssertions`2.BeEquivalentTo(Object[] expectations)\r\n   at Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsFalse_ShouldPlaceShipVertically() in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs:line 45\r\n","DisplayName":"WhenRandomBoolIsFalse_ShouldPlaceShipVertically","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0547830","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":14,"Stats":{"Failed":7,"Passed":7}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.081, 276709292536, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.081, 276709294372, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.081, 276709295130, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.081, 276709297458, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":14,"Stats":{"Failed":7,"Passed":7}},"ActiveTests":[{"Id":"49df6640-e5aa-83fe-4934-9b693fae0777","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally","DisplayName":"WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":27,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.081, 276709299333, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.086, 276709351865, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.087, 276709353348, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.087, 276709354205, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.087, 276709354771, testhost.dll, No DataCollection Data set for the test case 49df6640-e5aa-83fe-4934-9b693fae0777
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.087, 276709355537, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.087, 276709356174, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally  Niepowodzenie
+  Komunikat: Expected subject to be a collection with 3 item(s), but found an empty collection.
+
+With configuration:
+- Use declared types and members
+- Compare enums by value
+- Include all non-private properties
+- Include all non-private fields
+- Match member by name (or throw)
+- Be strict about the order of items in byte arrays
+- Without automatic conversion.
+
+  Ślad stosu:
+   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)
+   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)
+   at FluentAssertions.Collections.CollectionAssertions`2.BeEquivalentTo[TExpectation](IEnumerable`1 expectation, Func`2 config, String because, Object[] becauseArgs)
+   at FluentAssertions.Collections.CollectionAssertions`2.BeEquivalentTo(Object[] expectations)
+   at Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally() in D:\dev\sources\Battleships\Battleships.Core.Tests\RandomPositionerUnitTests.cs:line 33
+' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.087, 276709356862, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.087, 276709359444, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"49df6640-e5aa-83fe-4934-9b693fae0777","FullyQualifiedName":"Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally","DisplayName":"WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs","LineNumber":27,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"Expected subject to be a collection with 3 item(s), but found an empty collection.\r\n\r\nWith configuration:\r\n- Use declared types and members\r\n- Compare enums by value\r\n- Include all non-private properties\r\n- Include all non-private fields\r\n- Match member by name (or throw)\r\n- Be strict about the order of items in byte arrays\r\n- Without automatic conversion.\r\n","ErrorStackTrace":"   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)\r\n   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)\r\n   at FluentAssertions.Collections.CollectionAssertions`2.BeEquivalentTo[TExpectation](IEnumerable`1 expectation, Func`2 config, String because, Object[] becauseArgs)\r\n   at FluentAssertions.Collections.CollectionAssertions`2.BeEquivalentTo(Object[] expectations)\r\n   at Battleships.Core.Tests.RandomPositionerUnitTests.WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally() in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\RandomPositionerUnitTests.cs:line 33\r\n","DisplayName":"WhenRandomBoolIsTrue_ShouldPlaceShipHorizontally","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0044330","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":15,"Stats":{"Failed":8,"Passed":7}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.087, 276709361507, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.088, 276709369481, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.ShouldPutTwoFourMastedShipsRandomly.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.088, 276709370495, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.089, 276709373210, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":15,"Stats":{"Failed":8,"Passed":7}},"ActiveTests":[{"Id":"45fb9af0-bbee-33b2-8bfa-2bbce08fe788","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.ShouldPutTwoFourMastedShipsRandomly","DisplayName":"ShouldPutTwoFourMastedShipsRandomly","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":35,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.089, 276709374708, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.115, 276709635288, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.ShouldPutTwoFourMastedShipsRandomly execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.115, 276709636581, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.115, 276709637782, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.ShouldPutTwoFourMastedShipsRandomly.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.115, 276709638526, testhost.dll, No DataCollection Data set for the test case 45fb9af0-bbee-33b2-8bfa-2bbce08fe788
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.115, 276709639134, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.115, 276709639675, testhost.dll, TestRunCache: No test found corresponding to testResult 'ShouldPutTwoFourMastedShipsRandomly  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.115, 276709640231, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.116, 276709642745, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"45fb9af0-bbee-33b2-8bfa-2bbce08fe788","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.ShouldPutTwoFourMastedShipsRandomly","DisplayName":"ShouldPutTwoFourMastedShipsRandomly","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":35,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"ShouldPutTwoFourMastedShipsRandomly","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0255920","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":16,"Stats":{"Failed":8,"Passed":8}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.116, 276709644548, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.116, 276709648234, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.116, 276709649520, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.116, 276709652084, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":16,"Stats":{"Failed":8,"Passed":8}},"ActiveTests":[{"Id":"122301fe-fdb3-0b63-3616-be926b50d346","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2)","DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":90,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.117, 276709653772, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.121, 276709694802, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.121, 276709695951, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.121, 276709697218, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.121, 276709697885, testhost.dll, No DataCollection Data set for the test case 122301fe-fdb3-0b63-3616-be926b50d346
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.121, 276709698426, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.121, 276709698951, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2)  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.121, 276709699445, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.121, 276709701758, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"122301fe-fdb3-0b63-3616-be926b50d346","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2)","DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":90,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,0,2)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0035780","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":17,"Stats":{"Failed":8,"Passed":9}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.122, 276709703653, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.122, 276709705621, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.122, 276709706245, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.122, 276709708340, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":17,"Stats":{"Failed":8,"Passed":9}},"ActiveTests":[{"Id":"b92b36fa-d333-f460-967e-504f714eb8d5","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0)","DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":90,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.122, 276709709647, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.123, 276709719362, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.123, 276709720282, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.123, 276709721211, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.123, 276709721830, testhost.dll, No DataCollection Data set for the test case b92b36fa-d333-f460-967e-504f714eb8d5
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.123, 276709722459, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.124, 276709722968, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0)  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.124, 276709723448, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.124, 276709725571, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"b92b36fa-d333-f460-967e-504f714eb8d5","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0)","DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":90,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(0,0,2,0)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0005530","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":18,"Stats":{"Failed":8,"Passed":10}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.124, 276709727091, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.124, 276709728345, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.124, 276709729028, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.124, 276709730909, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":18,"Stats":{"Failed":8,"Passed":10}},"ActiveTests":[{"Id":"1e22f1d4-7bcd-2590-d3c8-8316481454a1","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7)","DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":90,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.124, 276709732118, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.125, 276709741819, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709742868, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709743684, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709744365, testhost.dll, No DataCollection Data set for the test case 1e22f1d4-7bcd-2590-d3c8-8316481454a1
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709745071, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709745634, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7)  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709746191, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709748657, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"1e22f1d4-7bcd-2590-d3c8-8316481454a1","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7)","DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":90,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,9,7)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0005460","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":19,"Stats":{"Failed":8,"Passed":11}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709750391, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.126, 276709751813, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.127, 276709759765, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.128, 276709762798, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":19,"Stats":{"Failed":8,"Passed":11}},"ActiveTests":[{"Id":"710fbf73-31f3-b20e-c57f-f32dc647920c","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9)","DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":90,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.128, 276709764260, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.129, 276709774438, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.129, 276709775553, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.129, 276709776385, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.129, 276709777092, testhost.dll, No DataCollection Data set for the test case 710fbf73-31f3-b20e-c57f-f32dc647920c
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.129, 276709777616, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.129, 276709778150, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9)  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.129, 276709778628, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.129, 276709781376, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"710fbf73-31f3-b20e-c57f-f32dc647920c","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9)","DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":90,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(9,9,7,9)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0005740","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":20,"Stats":{"Failed":8,"Passed":12}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.130, 276709783424, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.130, 276709789075, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.130, 276709790304, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.131, 276709793014, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":20,"Stats":{"Failed":8,"Passed":12}},"ActiveTests":[{"Id":"ca023ff9-d1ec-1dfa-15c0-8f163d9a689c","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.131, 276709794395, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.133, 276709818829, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.133, 276709820252, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.133, 276709821265, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.133, 276709822223, testhost.dll, No DataCollection Data set for the test case ca023ff9-d1ec-1dfa-15c0-8f163d9a689c
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.134, 276709823127, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.134, 276709823674, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0)  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.134, 276709824167, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.134, 276709826624, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"ca023ff9-d1ec-1dfa-15c0-8f163d9a689c","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,0)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0020190","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":21,"Stats":{"Failed":8,"Passed":13}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.134, 276709829028, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.134, 276709831533, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.134, 276709832342, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.135, 276709834488, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":21,"Stats":{"Failed":8,"Passed":13}},"ActiveTests":[{"Id":"bb4d1527-d99d-12de-dade-2a10e0fc9213","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.135, 276709836587, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.136, 276709847344, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.136, 276709848380, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.136, 276709849160, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.136, 276709849789, testhost.dll, No DataCollection Data set for the test case bb4d1527-d99d-12de-dade-2a10e0fc9213
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.136, 276709850320, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.136, 276709850866, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1)  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.136, 276709851385, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.137, 276709853749, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"bb4d1527-d99d-12de-dade-2a10e0fc9213","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,0,1)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0006320","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":22,"Stats":{"Failed":8,"Passed":14}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.137, 276709855876, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.137, 276709857144, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.137, 276709857672, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.137, 276709859486, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":22,"Stats":{"Failed":8,"Passed":14}},"ActiveTests":[{"Id":"ebf4a8de-a9b5-2e22-eaae-748373c7dda7","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.137, 276709860439, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.138, 276709869723, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.138, 276709870630, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.138, 276709871715, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.138, 276709872407, testhost.dll, No DataCollection Data set for the test case ebf4a8de-a9b5-2e22-eaae-748373c7dda7
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709872896, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709873359, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0)  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709873781, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709875745, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"ebf4a8de-a9b5-2e22-eaae-748373c7dda7","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,0)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0005500","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":23,"Stats":{"Failed":8,"Passed":15}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709877281, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709878489, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709878988, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709880813, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":23,"Stats":{"Failed":8,"Passed":15}},"ActiveTests":[{"Id":"aa901ec1-f6ad-9fae-e942-17dcf78de4d0","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.139, 276709881762, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.140, 276709890927, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.140, 276709891843, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709892697, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709893253, testhost.dll, No DataCollection Data set for the test case aa901ec1-f6ad-9fae-e942-17dcf78de4d0
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709893726, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709894188, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1)  Powodzenie' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709894618, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709897093, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"aa901ec1-f6ad-9fae-e942-17dcf78de4d0","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(0,0,1,1)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0005270","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":24,"Stats":{"Failed":8,"Passed":16}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709898792, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709900629, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.141, 276709901371, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.142, 276709903971, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":24,"Stats":{"Failed":8,"Passed":16}},"ActiveTests":[{"Id":"94ace69e-aacf-8c9d-ccbd-1f9b4cc31fd8","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.142, 276709905626, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.165, 276710132835, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.165, 276710134385, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.165, 276710135563, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.165, 276710136385, testhost.dll, No DataCollection Data set for the test case 94ace69e-aacf-8c9d-ccbd-1f9b4cc31fd8
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.165, 276710137078, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.165, 276710139542, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9)  Niepowodzenie
+  Komunikat: FakeItEasy.ExpectationException : 
+
+  Assertion failed for the following call:
+    Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: <Ignored>)
+  Expected to find it 4 times exactly but found it 3 times among the calls:
+    1: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+    2: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+    3: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+
+
+  Ślad stosu:
+   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Core\FakeAsserter.cs:line 42
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 173
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 148
+   at FakeItEasy.Configuration.RuleBuilder.ReturnValueConfiguration`1.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 255
+   at Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(Int32 firstPositionVertical, Int32 firstPositionHorizontal, Int32 secondPositionVertical, Int32 secondPositionHorizontal) in D:\dev\sources\Battleships\Battleships.Core.Tests\ShipPositionerUnitTests.cs:line 77' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.165, 276710140951, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.166, 276710146264, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"94ace69e-aacf-8c9d-ccbd-1f9b4cc31fd8","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"FakeItEasy.ExpectationException : \r\n\r\n  Assertion failed for the following call:\r\n    Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: <Ignored>)\r\n  Expected to find it 4 times exactly but found it 3 times among the calls:\r\n    1: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n    2: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n    3: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n\r\n","ErrorStackTrace":"   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Core\\FakeAsserter.cs:line 42\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 173\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 148\r\n   at FakeItEasy.Configuration.RuleBuilder.ReturnValueConfiguration`1.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 255\r\n   at Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(Int32 firstPositionVertical, Int32 firstPositionHorizontal, Int32 secondPositionVertical, Int32 secondPositionHorizontal) in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs:line 77","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,9)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0215900","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":25,"Stats":{"Failed":9,"Passed":16}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.166, 276710151279, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.167, 276710155001, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.167, 276710155808, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.167, 276710160431, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":25,"Stats":{"Failed":9,"Passed":16}},"ActiveTests":[{"Id":"19a173c5-98a8-a1fa-5bee-b3e60d83faef","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.167, 276710162218, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.170, 276710186335, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.170, 276710187466, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.170, 276710188877, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.170, 276710189543, testhost.dll, No DataCollection Data set for the test case 19a173c5-98a8-a1fa-5bee-b3e60d83faef
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.170, 276710190124, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.170, 276710190703, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8)  Niepowodzenie
+  Komunikat: FakeItEasy.ExpectationException : 
+
+  Assertion failed for the following call:
+    Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: <Ignored>)
+  Expected to find it 4 times exactly but found it 3 times among the calls:
+    1: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+    2: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+    3: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+
+
+  Ślad stosu:
+   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Core\FakeAsserter.cs:line 42
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 173
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 148
+   at FakeItEasy.Configuration.RuleBuilder.ReturnValueConfiguration`1.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 255
+   at Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(Int32 firstPositionVertical, Int32 firstPositionHorizontal, Int32 secondPositionVertical, Int32 secondPositionHorizontal) in D:\dev\sources\Battleships\Battleships.Core.Tests\ShipPositionerUnitTests.cs:line 77' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.170, 276710191406, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.171, 276710194199, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"19a173c5-98a8-a1fa-5bee-b3e60d83faef","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"FakeItEasy.ExpectationException : \r\n\r\n  Assertion failed for the following call:\r\n    Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: <Ignored>)\r\n  Expected to find it 4 times exactly but found it 3 times among the calls:\r\n    1: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n    2: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n    3: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n\r\n","ErrorStackTrace":"   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Core\\FakeAsserter.cs:line 42\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 173\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 148\r\n   at FakeItEasy.Configuration.RuleBuilder.ReturnValueConfiguration`1.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 255\r\n   at Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(Int32 firstPositionVertical, Int32 firstPositionHorizontal, Int32 secondPositionVertical, Int32 secondPositionHorizontal) in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs:line 77","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,9,8)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0013940","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":26,"Stats":{"Failed":10,"Passed":16}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.171, 276710197189, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.171, 276710198703, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.171, 276710199312, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.171, 276710201278, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":26,"Stats":{"Failed":10,"Passed":16}},"ActiveTests":[{"Id":"7e505d93-4c16-3a64-bbd3-8ad4f38686fc","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.172, 276710202521, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.174, 276710224773, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.174, 276710225719, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.174, 276710226488, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.174, 276710227077, testhost.dll, No DataCollection Data set for the test case 7e505d93-4c16-3a64-bbd3-8ad4f38686fc
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.174, 276710227583, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.174, 276710228091, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9)  Niepowodzenie
+  Komunikat: FakeItEasy.ExpectationException : 
+
+  Assertion failed for the following call:
+    Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: <Ignored>)
+  Expected to find it 4 times exactly but found it 3 times among the calls:
+    1: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+    2: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+    3: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+
+
+  Ślad stosu:
+   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Core\FakeAsserter.cs:line 42
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 173
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 148
+   at FakeItEasy.Configuration.RuleBuilder.ReturnValueConfiguration`1.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 255
+   at Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(Int32 firstPositionVertical, Int32 firstPositionHorizontal, Int32 secondPositionVertical, Int32 secondPositionHorizontal) in D:\dev\sources\Battleships\Battleships.Core.Tests\ShipPositionerUnitTests.cs:line 77' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.174, 276710228894, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.174, 276710231152, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"7e505d93-4c16-3a64-bbd3-8ad4f38686fc","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"FakeItEasy.ExpectationException : \r\n\r\n  Assertion failed for the following call:\r\n    Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: <Ignored>)\r\n  Expected to find it 4 times exactly but found it 3 times among the calls:\r\n    1: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n    2: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n    3: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n\r\n","ErrorStackTrace":"   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Core\\FakeAsserter.cs:line 42\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 173\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 148\r\n   at FakeItEasy.Configuration.RuleBuilder.ReturnValueConfiguration`1.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 255\r\n   at Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(Int32 firstPositionVertical, Int32 firstPositionHorizontal, Int32 secondPositionVertical, Int32 secondPositionHorizontal) in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs:line 77","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,9)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0012700","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":27,"Stats":{"Failed":11,"Passed":16}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.175, 276710233442, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.175, 276710234992, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8).
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.175, 276710235637, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.175, 276710238165, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":27,"Stats":{"Failed":11,"Passed":16}},"ActiveTests":[{"Id":"29c04653-a483-cce1-e729-955c83dbdd73","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]}]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.175, 276710239389, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.178, 276710271520, testhost.dll, TestExecutionRecorder.RecordEnd: test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8) execution completed.
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.179, 276710272926, testhost.dll, InProgressTests is null
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.179, 276710273877, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8).
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.179, 276710274645, testhost.dll, No DataCollection Data set for the test case 29c04653-a483-cce1-e729-955c83dbdd73
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.179, 276710275391, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8480, 12, 2020/10/10, 22:06:20.179, 276710276009, testhost.dll, TestRunCache: No test found corresponding to testResult 'WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8)  Niepowodzenie
+  Komunikat: FakeItEasy.ExpectationException : 
+
+  Assertion failed for the following call:
+    Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: <Ignored>)
+  Expected to find it 4 times exactly but found it 3 times among the calls:
+    1: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+    2: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+    3: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)
+
+
+  Ślad stosu:
+   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Core\FakeAsserter.cs:line 42
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 173
+   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 148
+   at FakeItEasy.Configuration.RuleBuilder.ReturnValueConfiguration`1.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\projects\fakeiteasy\src\FakeItEasy\Configuration\RuleBuilder.cs:line 255
+   at Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(Int32 firstPositionVertical, Int32 firstPositionHorizontal, Int32 secondPositionVertical, Int32 secondPositionHorizontal) in D:\dev\sources\Battleships\Battleships.Core.Tests\ShipPositionerUnitTests.cs:line 77' in inProgress list.
+TpTrace Information: 0 : 8480, 12, 2020/10/10, 22:06:20.179, 276710276832, testhost.dll, Sending test run statistics
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.179, 276710279731, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"29c04653-a483-cce1-e729-955c83dbdd73","FullyQualifiedName":"Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8)","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8)","ExecutorUri":"executor://NUnit3TestExecutor","Source":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\bin\\Debug\\netcoreapp3.1\\Battleships.Core.Tests.dll","CodeFilePath":"D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs","LineNumber":64,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"FakeItEasy.ExpectationException : \r\n\r\n  Assertion failed for the following call:\r\n    Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: <Ignored>)\r\n  Expected to find it 4 times exactly but found it 3 times among the calls:\r\n    1: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n    2: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n    3: Battleships.Core.RandomPositioner.GeneratePositionsForShip(ship: Battleships.Core.Ship)\r\n\r\n","ErrorStackTrace":"   at FakeItEasy.Core.FakeAsserter.AssertWasCalled(Func`2 callPredicate, Action`1 callDescriber, CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Core\\FakeAsserter.cs:line 42\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(CallCountConstraint callCountConstraint) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 173\r\n   at FakeItEasy.Configuration.RuleBuilder.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 148\r\n   at FakeItEasy.Configuration.RuleBuilder.ReturnValueConfiguration`1.MustHaveHappened(Int32 numberOfTimes, Times timesOption) in C:\\projects\\fakeiteasy\\src\\FakeItEasy\\Configuration\\RuleBuilder.cs:line 255\r\n   at Battleships.Core.Tests.ShipPositionerUnitTests.WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(Int32 firstPositionVertical, Int32 firstPositionHorizontal, Int32 secondPositionVertical, Int32 secondPositionHorizontal) in D:\\dev\\sources\\Battleships\\Battleships.Core.Tests\\ShipPositionerUnitTests.cs:line 77","DisplayName":"WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(9,9,8,8)","Messages":[],"ComputerName":"DESKTOP-RC4G97H","Duration":"00:00:00.0023270","StartTime":"2020-10-10T20:06:20+00:00","EndTime":"2020-10-10T20:06:20+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":28,"Stats":{"Failed":12,"Passed":16}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 8480, 12, 2020/10/10, 22:06:20.179, 276710282109, testhost.dll, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:20.212, 276710611060, testhost.dll, NUnit Adapter 3.10.0.21: Test execution complete
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:20.213, 276710615019, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.10.0.21: Test execution complete"}}
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:20.214, 276710629520, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 8480, 4, 2020/10/10, 22:06:20.218, 276710664714, testhost.dll, Sending test run complete
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:20.240, 276710889012, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":28,"Stats":{"Failed":12,"Passed":16}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:01.3329600","Metrics":{}},"LastRunTests":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":28,"Stats":{"Failed":12,"Passed":16}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":["executor://nunit3testexecutor/"]}}
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:20.241, 276710895188, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:62254 localEndPoint: [::ffff:127.0.0.1]:62255
+TpTrace Verbose: 0 : 8480, 4, 2020/10/10, 22:06:20.241, 276710896544, testhost.dll, BaseRunTests.RunTests: Run is complete.
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:20.241, 276710898502, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:20.241, 276710899158, testhost.dll, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 8480, 1, 2020/10/10, 22:06:20.242, 276710905060, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:062254
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:20.242, 276710905056, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:062254
+TpTrace Information: 0 : 8480, 1, 2020/10/10, 22:06:20.242, 276710907513, testhost.dll, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:20.242, 276710908209, testhost.dll, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 8480, 1, 2020/10/10, 22:06:20.242, 276710912077, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 8480, 10, 2020/10/10, 22:06:20.242, 276710912092, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:20.243, 276710913512, testhost.dll, Closing the connection !
+TpTrace Information: 0 : 8480, 1, 2020/10/10, 22:06:20.243, 276710914059, testhost.dll, Testhost process exiting.
+TpTrace Information: 0 : 8480, 10, 2020/10/10, 22:06:20.243, 276710917113, testhost.dll, SocketClient.PrivateStop: Stop communication from server endpoint: 127.0.0.1:062254, error:

@@ -57,12 +57,12 @@ namespace Battleships.Core.Tests
         [TestCase(9, 9, 8, 9)]
         [TestCase(9, 9, 8, 8)]
         public void WhenShipsAreNotAtLeastOnePositionAway_ShouldReposition(
-            byte firstPositionVertical,
-            byte firstPositionHorizontal,
-            byte secondPositionVertical,
-            byte secondPositionHorizontal)
+            int firstPositionVertical,
+            int firstPositionHorizontal,
+            int secondPositionVertical,
+            int secondPositionHorizontal)
         {
-            const byte numberOfShipsOnTheBoard = 3;
+            const int numberOfShipsOnTheBoard = 3;
 
             var positions = new List<Position> { new Position(
                 new Coordinates(firstPositionVertical, firstPositionHorizontal)) };
@@ -83,12 +83,12 @@ namespace Battleships.Core.Tests
         [TestCase(9, 9, 9, 7)]
         [TestCase(9, 9, 7, 9)]
         public void WhenShipsAreAtLeastOnePositionAway_ShouldNotReposition(
-            byte firstPositionVertical,
-            byte firstPositionHorizontal,
-            byte secondPositionVertical,
-            byte secondPositionHorizontal)
+            int firstPositionVertical,
+            int firstPositionHorizontal,
+            int secondPositionVertical,
+            int secondPositionHorizontal)
         {
-            const byte numberOfShipsOnTheBoard = 3;
+            const int numberOfShipsOnTheBoard = 3;
 
             var positions = new List<Position> { new Position(
                 new Coordinates(firstPositionVertical, firstPositionHorizontal)) };
