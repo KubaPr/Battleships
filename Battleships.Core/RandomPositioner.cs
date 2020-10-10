@@ -5,9 +5,37 @@ namespace Battleships.Core
 {
     internal class RandomPositioner
     {
-        public virtual List<Position> CreatePositionsForShip(Ship ship)
+        private readonly int _boardSize;
+        private readonly IRandomGenerator _randomGenerator;
+
+        public RandomPositioner(int boardSize, IRandomGenerator randomGenerator)
         {
-            throw new NotImplementedException();
+            _boardSize = boardSize;
+            _randomGenerator = randomGenerator;
+        }
+
+        public virtual List<Position> GeneratePositionsForShip(Ship ship)
+        {
+            if (ship.NumberOfMasts > _boardSize)
+            {
+                throw new ArgumentException("Ship cannot be bigger than the board");
+            }
+
+            var isHorizontallyOriented = _randomGenerator.GenerateRandomBool();
+            var boardFittingInitialCoordinate = _randomGenerator.GenerateRandomNumber(0, _boardSize - 1);
+            var shipFittingInitialCoordinate = _randomGenerator.GenerateRandomNumber(0, _boardSize - 1 - ship.NumberOfMasts);
+
+            var positions = new List<Position>();
+
+            for (var i = shipFittingInitialCoordinate; i < ship.NumberOfMasts + shipFittingInitialCoordinate; i++)
+            {
+                positions.Add(
+                    isHorizontallyOriented ?
+                    new Position(new Coordinates(boardFittingInitialCoordinate, i), ship) :
+                    new Position(new Coordinates(i, boardFittingInitialCoordinate), ship));
+            }
+
+            return positions;
         }
     }
 }

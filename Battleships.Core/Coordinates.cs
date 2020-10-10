@@ -2,10 +2,10 @@
 {
     internal class Coordinates
     {
-        public byte Vertical { get; }
-        public byte Horizontal { get; }
+        public int Vertical { get; }
+        public int Horizontal { get; }
 
-        public Coordinates(byte vertical, byte horizontal)
+        public Coordinates(int vertical, int horizontal)
         {
             Vertical = vertical;
             Horizontal = horizontal;

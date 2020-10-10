@@ -2,7 +2,7 @@
 {
     internal class BoardInitializer
     {
-        private ShipPositioner _shipPositioner;
+        private readonly ShipPositioner _shipPositioner;
 
         public BoardInitializer(ShipPositioner shipPositioner)
         {

@@ -37,29 +37,29 @@ namespace Battleships.Core
 
         private List<Position> GeneratePositions(Ship ship, List<Position> positions)
         {
-            var generatedPositions = _randomPositioner.CreatePositionsForShip(ship);
+            var generatedPositions = _randomPositioner.GeneratePositionsForShip(ship);
 
-            while(IsAnyPositionInvalid(generatedPositions, positions))
+            while(AreShipsColliding(generatedPositions, positions))
             {
                 generatedPositions.Clear();
-                generatedPositions = _randomPositioner.CreatePositionsForShip(ship);
+                generatedPositions = _randomPositioner.GeneratePositionsForShip(ship);
             }
 
             return generatedPositions;
         }
 
-        private bool IsAnyPositionInvalid(List<Position> generatedPositions, List<Position> positions)
+        private bool AreShipsColliding(List<Position> generatedPositions, List<Position> positions)
         {
-            return generatedPositions.Any(position => IsTooClose(position.Coordinates, positions));
+            return generatedPositions.Any(position => AreTooClose(position.Coordinates, positions));
         }
 
-        private bool IsTooClose(Coordinates coordinates, List<Position> alreadyTakenPositions)
+        private bool AreTooClose(Coordinates coordinates, List<Position> alreadyTakenPositions)
         {
-            const byte minimumOffset = 1;
+            const int minimumOffset = 1;
 
             return alreadyTakenPositions.Any(takenPosition =>
-                Math.Abs(takenPosition.Coordinates.Horizontal - coordinates.Horizontal) < minimumOffset ||
-                Math.Abs(takenPosition.Coordinates.Vertical - coordinates.Vertical) < minimumOffset);
+                Math.Abs(takenPosition.Coordinates.Horizontal - coordinates.Horizontal) <= minimumOffset &&
+                Math.Abs(takenPosition.Coordinates.Vertical - coordinates.Vertical) <= minimumOffset);
         }
     }
 }
