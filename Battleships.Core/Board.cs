@@ -7,9 +7,10 @@ namespace Battleships.Core
     {
         private List<Position> Positions { get; }
 
+        public static readonly int Size = 10;
+
         public Board(List<Position> positions)
         {
-            //TODO: positions validation
             Positions = positions;
         }
 

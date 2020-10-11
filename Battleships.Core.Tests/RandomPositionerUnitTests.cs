@@ -8,7 +8,6 @@ namespace Battleships.Core.Tests
 {
     internal class RandomPositionerUnitTests
     {
-        private readonly int _boardSize = 10;
         private readonly Ship _dummyShip = new Ship(1);
 
         private RandomPositioner _subject;
@@ -19,7 +18,7 @@ namespace Battleships.Core.Tests
         {
             _randomGeneratorDouble = A.Fake<RandomGenerator>();
 
-            _subject = new RandomPositioner(_boardSize, _randomGeneratorDouble);
+            _subject = new RandomPositioner(_randomGeneratorDouble);
         }
 
         [Test]
@@ -53,7 +52,7 @@ namespace Battleships.Core.Tests
 
             _subject.GeneratePositionsForShip(_dummyShip);
 
-            A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(0, _boardSize - 1)).MustHaveHappenedOnceExactly();
+            A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(0, Board.Size - 1)).MustHaveHappenedOnceExactly();
         }
 
         [Test]
@@ -65,7 +64,7 @@ namespace Battleships.Core.Tests
 
             _subject.GeneratePositionsForShip(ship);
 
-            A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(0, _boardSize - 1 - ship.NumberOfMasts))
+            A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(0, Board.Size - 1 - ship.NumberOfMasts))
                 .MustHaveHappenedOnceExactly();
         }
 
@@ -76,7 +75,7 @@ namespace Battleships.Core.Tests
 
             _subject.GeneratePositionsForShip(_dummyShip);
 
-            A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(0, _boardSize - 1)).MustHaveHappenedOnceExactly();
+            A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(0, Board.Size - 1)).MustHaveHappenedOnceExactly();
         }
 
         [Test]
@@ -88,7 +87,7 @@ namespace Battleships.Core.Tests
 
             _subject.GeneratePositionsForShip(ship);
 
-            A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(0, _boardSize - 1 - ship.NumberOfMasts))
+            A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(0, Board.Size - 1 - ship.NumberOfMasts))
                 .MustHaveHappenedOnceExactly();
         }
 
@@ -114,11 +113,9 @@ namespace Battleships.Core.Tests
         [Test]
         public void ShouldNotAcceptShipsBiggerThanTheBoard()
         {
-            const int boardSize = 3;
+            var subject = new RandomPositioner(_randomGeneratorDouble);
 
-            var subject = new RandomPositioner(boardSize: boardSize, _randomGeneratorDouble);
-
-            Action act = () => subject.GeneratePositionsForShip(new Ship(boardSize + 1));
+            Action act = () => subject.GeneratePositionsForShip(new Ship(Board.Size + 1));
 
             act.Should().Throw<ArgumentException>().WithMessage("Ship cannot be bigger than the board");
         }

@@ -68,6 +68,5 @@ namespace Battleships.Core.Tests
         {
             return A.Fake<Position>(opt => opt.WithArgumentsForConstructor(() => new Position(coordinates, occupant)));
         }
-
     }
 }

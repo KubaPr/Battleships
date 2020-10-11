@@ -2,6 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Battleships.Core.Tests
 {
@@ -29,9 +30,9 @@ namespace Battleships.Core.Tests
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._))
                 .Returns(anotherShipPositions).Once();
 
-            _subject.CreatePositions(new List<Ship> { new Ship(1), new Ship(2) }).Should().Contain(firstShipPositions)
-                .And.Contain(anotherShipPositions)
-                .And.HaveCount(2);
+            _subject.CreatePositions(new List<Ship> { new Ship(1), new Ship(2) }).Should()
+                .Contain(firstShipPositions).And
+                .Contain(anotherShipPositions);
         }
 
         [TestCase(0, 0, 0, 0)]
@@ -88,6 +89,52 @@ namespace Battleships.Core.Tests
 
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._))
                 .MustHaveHappened(numberOfShipsOnTheBoard, Times.Exactly);
+        }
+
+        [Test]
+        public void ShouldReturnUnoccupiedPositionsWhereThereAreNoShips()
+        {
+            var positions = _subject.CreatePositions(new List<Ship> { new Ship(1) });
+
+            positions.Where(position => !position.IsOccupied).Should().NotBeNullOrEmpty();
+        }
+
+        [Test]
+        public void ShouldReturnAsManyPositionsAsOnGameBoard()
+        {
+            var positions = _subject.CreatePositions(new List<Ship> { new Ship(4), new Ship(2) });
+
+            positions.Should().HaveCount(Board.Size * Board.Size);
+        }
+
+        [TestCase(0)]
+        [TestCase(1)]
+        [TestCase(2)]
+        [TestCase(3)]
+        [TestCase(4)]
+        [TestCase(5)]
+        [TestCase(6)]
+        [TestCase(7)]
+        [TestCase(8)]
+        [TestCase(9)]
+        public void ShouldNotDuplicatePositions(int coordinate)
+        {
+            A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._)).Returns(
+                new List<Position>
+                {
+                    new Position(new Coordinates(1, 8)),
+                    new Position(new Coordinates(1, 9))
+                });
+
+            var positions = _subject.CreatePositions(new List<Ship> { new Ship(2) });
+
+            //TODO: Go back to this and think if this could be more readable
+            positions.Where(position => position.Coordinates.Vertical == coordinate)
+                .Select(position => position.Coordinates.Horizontal)
+                .Should().OnlyHaveUniqueItems();
+            positions.Where(position => position.Coordinates.Horizontal == coordinate)
+                .Select(position => position.Coordinates.Vertical)
+                .Should().OnlyHaveUniqueItems();
         }
     }
 }

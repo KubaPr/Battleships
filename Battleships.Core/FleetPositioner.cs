@@ -24,6 +24,8 @@ namespace Battleships.Core
                 positions.AddRange(shipPositions);
             }
 
+            positions.AddRange(CreateUnocupiedPositions(positions));
+
             return positions;
         }
 
@@ -52,6 +54,33 @@ namespace Battleships.Core
             return alreadyTakenPositions.Any(takenPosition =>
                 Math.Abs(takenPosition.Coordinates.Horizontal - coordinates.Horizontal) <= minimumOffset &&
                 Math.Abs(takenPosition.Coordinates.Vertical - coordinates.Vertical) <= minimumOffset);
+        }
+
+        private IEnumerable<Position> CreateUnocupiedPositions(List<Position> occupiedPositions)
+        {
+            var unoccupiedPositions = new List<Position>();
+
+            for(var horizontal = 0; horizontal < Board.Size; horizontal++)
+            {
+                for(var vertical = 0; vertical < Board.Size; vertical++)
+                {
+                    if (IsTaken(occupiedPositions, horizontal, vertical))
+                    {
+                        break;
+                    }
+
+                    unoccupiedPositions.Add(new Position(new Coordinates(vertical, horizontal)));
+                }
+            }
+
+            return unoccupiedPositions;
+        }
+
+        private bool IsTaken(List<Position> occupiedPositions, int horizontal, int vertical)
+        {
+            return occupiedPositions.Any(position =>
+                position.Coordinates.Horizontal == horizontal &&
+                position.Coordinates.Vertical == vertical);
         }
     }
 }
