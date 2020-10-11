@@ -6,9 +6,9 @@ namespace Battleships.Core
     internal class RandomPositioner
     {
         private readonly int _boardSize;
-        private readonly IRandomGenerator _randomGenerator;
+        private readonly RandomGenerator _randomGenerator;
 
-        public RandomPositioner(int boardSize, IRandomGenerator randomGenerator)
+        public RandomPositioner(int boardSize, RandomGenerator randomGenerator)
         {
             _boardSize = boardSize;
             _randomGenerator = randomGenerator;

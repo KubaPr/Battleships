@@ -12,12 +12,12 @@ namespace Battleships.Core.Tests
         private readonly Ship _dummyShip = new Ship(1);
 
         private RandomPositioner _subject;
-        private IRandomGenerator _randomGeneratorDouble;
+        private RandomGenerator _randomGeneratorDouble;
 
         [SetUp]
         public void SetUp()
         {
-            _randomGeneratorDouble = A.Fake<IRandomGenerator>();
+            _randomGeneratorDouble = A.Fake<RandomGenerator>();
 
             _subject = new RandomPositioner(_boardSize, _randomGeneratorDouble);
         }
