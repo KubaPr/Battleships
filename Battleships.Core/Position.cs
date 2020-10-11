@@ -2,12 +2,12 @@
 
 namespace Battleships.Core
 {
-    internal class Position
+    public class Position
     {
         public Coordinates Coordinates { get; }
-        public bool IsOccupied => Occupant != null;
-        public Ship Occupant { get; }
         public PositionState State { get; private set; }
+        internal bool IsOccupied => Occupant != null;
+        internal Ship Occupant { get; }
 
         public Position(Coordinates coordinates, Ship occupant = null)
         {

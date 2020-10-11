@@ -1,13 +1,11 @@
-﻿using System.Collections.Generic;
-
-namespace Battleships.Core
+﻿namespace Battleships.Core
 {
-    internal class BoardInitializer
+    public class BoardInitializer
     {
         private readonly FleetPositioner _fleetPositioner;
         private readonly FleetConfigurationProvider _fleetConfigurationProvider;
 
-        public BoardInitializer(FleetPositioner fleetPositioner, FleetConfigurationProvider fleetConfigurationProvider)
+        internal BoardInitializer(FleetPositioner fleetPositioner, FleetConfigurationProvider fleetConfigurationProvider)
         {
             _fleetPositioner = fleetPositioner;
             _fleetConfigurationProvider = fleetConfigurationProvider;

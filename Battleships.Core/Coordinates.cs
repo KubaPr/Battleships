@@ -1,6 +1,6 @@
 ﻿namespace Battleships.Core
 {
-    internal class Coordinates
+    public class Coordinates
     {
         public int Vertical { get; }
         public int Horizontal { get; }

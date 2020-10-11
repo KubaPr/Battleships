@@ -3,13 +3,13 @@ using System.Linq;
 
 namespace Battleships.Core
 {
-    internal class Board
+    public class Board
     {
-        private List<Position> Positions { get; }
+        public List<Position> Positions { get; }
 
         public static readonly int Size = 10;
 
-        public Board(List<Position> positions)
+        internal Board(List<Position> positions)
         {
             Positions = positions;
         }

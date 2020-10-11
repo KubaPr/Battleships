@@ -64,12 +64,10 @@ namespace Battleships.Core
             {
                 for(var vertical = 0; vertical < Board.Size; vertical++)
                 {
-                    if (IsTaken(occupiedPositions, horizontal, vertical))
+                    if (!IsTaken(occupiedPositions, horizontal, vertical))
                     {
-                        break;
+                        unoccupiedPositions.Add(new Position(new Coordinates(vertical, horizontal)));
                     }
-
-                    unoccupiedPositions.Add(new Position(new Coordinates(vertical, horizontal)));
                 }
             }
 

@@ -1,9 +1,7 @@
 ﻿using FakeItEasy;
 using FluentAssertions;
-using FluentAssertions.Common;
 using NUnit.Framework;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace Battleships.Core.Tests
 {
