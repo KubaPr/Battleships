@@ -1,17 +1,23 @@
-﻿namespace Battleships.Core
+﻿using System.Collections.Generic;
+
+namespace Battleships.Core
 {
     internal class BoardInitializer
     {
-        private readonly ShipPositioner _shipPositioner;
+        private readonly FleetPositioner _fleetPositioner;
+        private readonly FleetConfigurationProvider _fleetConfigurationProvider;
 
-        public BoardInitializer(ShipPositioner shipPositioner)
+        public BoardInitializer(FleetPositioner fleetPositioner, FleetConfigurationProvider fleetConfigurationProvider)
         {
-            _shipPositioner = shipPositioner;
+            _fleetPositioner = fleetPositioner;
+            _fleetConfigurationProvider = fleetConfigurationProvider;
         }
 
         public Board Initialize()
         {
-            return new Board(_shipPositioner.CreatePositions());
+            var fleet = _fleetConfigurationProvider.Get();
+
+            return new Board(_fleetPositioner.CreatePositions(fleet));
         }
     }
 }

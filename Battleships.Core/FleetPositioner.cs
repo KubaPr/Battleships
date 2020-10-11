@@ -4,25 +4,17 @@ using System.Linq;
 
 namespace Battleships.Core
 {
-    internal class ShipPositioner
+    internal class FleetPositioner
     {
         private readonly RandomPositioner _randomPositioner;
 
-        public ShipPositioner(RandomPositioner randomPositioner)
+        public FleetPositioner(RandomPositioner randomPositioner)
         {
             _randomPositioner = randomPositioner;
         }
 
-        public virtual List<Position> CreatePositions()
+        public virtual List<Position> CreatePositions(List<Ship> shipsToBePositioned)
         {
-            //TODO: to rethink. This should probably be passed to this class and created elswhere.
-            var shipsToBePositioned = new List<Ship>
-            {
-                new Ship(5),
-                new Ship(4),
-                new Ship(4)
-            };
-
             var positions = new List<Position>();
 
             foreach(var ship in shipsToBePositioned)
