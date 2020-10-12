@@ -11,8 +11,8 @@ namespace Battleships.Tests
         private BoardInitializerFactory _boardInitializerFactoryDouble;
         private ConsolePrinter _consolePrinterDouble;
         private BoardPrinter _boardPrinterDouble;
-        private ConsoleReader _consoleReaderDouble;
-        private InputMapper _inputMapperDouble;
+        private ConsoleCoordinatesReader _consoleCoordinateReaderDouble;
+        private CoordinatesMapper _inputMapperDouble;
         private ShotResultMapper _shotResultMapperDouble;
 
         [SetUp]
@@ -21,41 +21,18 @@ namespace Battleships.Tests
             _boardInitializerFactoryDouble = A.Fake<BoardInitializerFactory>();
             _consolePrinterDouble = A.Fake<ConsolePrinter>();
             _boardPrinterDouble = A.Fake<BoardPrinter>();
-            _consoleReaderDouble = A.Fake<ConsoleReader>();
-            _inputMapperDouble = A.Fake<InputMapper>();
+            _consoleCoordinateReaderDouble = A.Fake<ConsoleCoordinatesReader>();
+            _inputMapperDouble = A.Fake<CoordinatesMapper>();
             _shotResultMapperDouble = A.Fake<ShotResultMapper>();
 
             _subject = new ConsoleGame(
                 _boardInitializerFactoryDouble,
                 _consolePrinterDouble,
                 _boardPrinterDouble,
-                _consoleReaderDouble,
+                _consoleCoordinateReaderDouble,
                 _inputMapperDouble,
                 _shotResultMapperDouble);
         }
-
-        [Test]
-        public void ShouldCreateBoardInitializer()
-        {
-            StubBoardIsConquered();
-
-            _subject.Start();
-
-            A.CallTo(() => _boardInitializerFactoryDouble.CreateBoardInitializer()).MustHaveHappened();
-        }
-
-        //[Test]
-        //public void ShouldInitializeBoard()
-        //{
-        //    var initializerDouble = A.Fake<BoardInitializer>();
-
-        //    A.CallTo(() => _boardInitializerFactoryDouble.CreateBoardInitializer()).Returns(initializerDouble);
-        //    StubBoardIsConquered();
-
-        //    _subject.Start();
-
-        //    A.CallTo(() => initializerDouble.Initialize()).MustHaveHappened();
-        //}
 
         [Test]
         public void ShouldPrintBoard()
@@ -77,7 +54,7 @@ namespace Battleships.Tests
 
             _subject.Start();
 
-            A.CallTo(() => _consoleReaderDouble.ReadInput()).MustHaveHappened();
+            A.CallTo(() => _consoleCoordinateReaderDouble.ReadInput()).MustHaveHappened();
         }
 
         [Test]
@@ -85,7 +62,7 @@ namespace Battleships.Tests
         {
             const string input = "input";
 
-            A.CallTo(() => _consoleReaderDouble.ReadInput()).Returns(input);
+            A.CallTo(() => _consoleCoordinateReaderDouble.ReadInput()).Returns(input);
             StubBoardIsConquered();
 
             _subject.Start();

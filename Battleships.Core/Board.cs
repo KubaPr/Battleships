@@ -5,7 +5,7 @@ namespace Battleships.Core
 {
     public class Board
     {
-        public List<Position> Positions { get; }
+        public virtual List<Position> Positions { get; }
 
         public static readonly int Size = 10;
 

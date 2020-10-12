@@ -6,7 +6,7 @@ namespace Battleships
     {
         public virtual void Print(string stringToPrint)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(stringToPrint);
         }
     }
 }

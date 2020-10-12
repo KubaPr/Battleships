@@ -4,9 +4,9 @@ namespace Battleships
 {
     internal class ConsoleReader
     {
-        public virtual string ReadInput()
+        public virtual string Read()
         {
-            throw new NotImplementedException();
+            return Console.ReadLine();
         }
     }
 }

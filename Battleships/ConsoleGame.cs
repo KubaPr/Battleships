@@ -8,42 +8,40 @@ namespace Battleships
         private readonly BoardInitializerFactory _boardInitializerFactory;
         private readonly ConsolePrinter _consolePrinter;
         private readonly BoardPrinter _boardPrinter;
-        private readonly ConsoleReader _consoleReader;
-        private readonly InputMapper _inputMapper;
+        private readonly ConsoleCoordinatesReader _consoleCoordinateReader;
+        private readonly CoordinatesMapper _coordinatesMapper;
         private readonly ShotResultMapper _shotResultMapper;
 
         public ConsoleGame(
             BoardInitializerFactory boardInitializerFactory,
             ConsolePrinter consolePrinter,
-            BoardPrinter boardPrinterDouble,
-            ConsoleReader consoleReaderDouble,
-            InputMapper inputMapperDouble,
+            BoardPrinter boardPrinter,
+            ConsoleCoordinatesReader consoleReader,
+            CoordinatesMapper coordinatesMapper,
             ShotResultMapper shotResultMapper)
         {
             _boardInitializerFactory = boardInitializerFactory;
             _consolePrinter = consolePrinter;
-            _boardPrinter = boardPrinterDouble;
-            _consoleReader = consoleReaderDouble;
-            _inputMapper = inputMapperDouble;
+            _boardPrinter = boardPrinter;
+            _consoleCoordinateReader = consoleReader;
+            _coordinatesMapper = coordinatesMapper;
             _shotResultMapper = shotResultMapper;
         }
 
         public void Start()
         {
             var initializer = _boardInitializerFactory.CreateBoardInitializer();
-
             var board = initializer.Initialize();
 
             while (!board.IsConquered)
             {
                 _consolePrinter.Print(_boardPrinter.Print(board));
 
-                var input = _consoleReader.ReadInput();
-
-                var coordinates = _inputMapper.Map(input);
-
+                var inputCoordinates = _consoleCoordinateReader.ReadInput();
+                var coordinates = _coordinatesMapper.Map(inputCoordinates);
                 var shotResult = _shotResultMapper.Map(board.Check(coordinates));
 
+                //TODO: clear console
                 _consolePrinter.Print(shotResult);
             }
         }

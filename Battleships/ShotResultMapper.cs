@@ -1,5 +1,4 @@
 ﻿using Battleships.Core;
-using System;
 
 namespace Battleships
 {
@@ -7,7 +6,7 @@ namespace Battleships
     {
         public virtual string Map(ShotResult shotResult)
         {
-            throw new NotImplementedException();
+            return shotResult.IsHit ? $"You hit {shotResult.Ship.NumberOfMasts}-masted ship!" : "Miss!";
         }
     }
 }
