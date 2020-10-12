@@ -11,7 +11,7 @@
             _fleetConfigurationProvider = fleetConfigurationProvider;
         }
 
-        public Board Initialize()
+        public virtual Board Initialize()
         {
             var fleet = _fleetConfigurationProvider.Get();
 

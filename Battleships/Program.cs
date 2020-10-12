@@ -8,7 +8,7 @@ namespace Battleships
         {
             Console.WriteLine("Hello Battleships!");
 
-            var game = new ConsoleGame();
+            var game = new ConsoleGame(null, null, null, null, null, null);
 
             game.Start();
         }

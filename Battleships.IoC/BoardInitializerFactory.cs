@@ -5,7 +5,7 @@ namespace Battleships.IoC
 {
     public class BoardInitializerFactory
     {
-        public static BoardInitializer CreateBoardInitializer()
+        public virtual BoardInitializer CreateBoardInitializer()
         {
             return new BoardInitializer(
                         new FleetPositioner(

@@ -14,7 +14,7 @@ namespace Battleships.Core
             Positions = positions;
         }
 
-        public bool IsConquered => Positions
+        public virtual bool IsConquered => Positions
             .Select(position => position.Occupant)
             .Where(occupant => occupant != null)
             .All(occupant => occupant.IsSunk);
