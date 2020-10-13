@@ -2,7 +2,7 @@
 {
     public class Destroyer : Ship
     {
-        private const int destroyerMastsCount = 5;
+        private const int destroyerMastsCount = 4;
 
         public Destroyer() : base(destroyerMastsCount)
         {

@@ -7,11 +7,11 @@ namespace Battleships.Core.Tests.Fleet
     internal class FleetConfigurationProviderUnitTests
     {
         [Test]
-        public void ShouldReturnOneDestroyerAndTwoBattleships()
+        public void ShouldReturnTwoDestroyersAndOneBattleship()
         {
             var subject = new FleetConfigurationProvider();
 
-            subject.Get().Should().BeEquivalentTo(new Destroyer(), new Battleship(), new Battleship());
+            subject.Get().Should().BeEquivalentTo(new Destroyer(), new Destroyer(), new Battleship());
         }
     }
 }

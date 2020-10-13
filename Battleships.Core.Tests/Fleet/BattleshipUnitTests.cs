@@ -13,9 +13,9 @@ namespace Battleships.Core.Tests.Fleet
         }
 
         [Test]
-        public void ShouldHaveFourMasts()
+        public void ShouldHaveFiveMasts()
         {
-            new Battleship().NumberOfMasts.Should().Be(4);
+            new Battleship().NumberOfMasts.Should().Be(5);
         }
     }
 }

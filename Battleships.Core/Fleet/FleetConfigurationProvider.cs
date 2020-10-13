@@ -9,7 +9,7 @@ namespace Battleships.Core.Fleet
             return new List<Ship>
             {
                 new Destroyer(),
-                new Battleship(),
+                new Destroyer(),
                 new Battleship()
             };
         }
