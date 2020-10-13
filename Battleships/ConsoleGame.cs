@@ -1,10 +1,9 @@
-﻿using Battleships.IoC;
+﻿using Battleships.Core;
 
 namespace Battleships
 {
-    internal class ConsoleGame
+    internal class ConsoleGame : Game
     {
-        private readonly BoardInitializerFactory _boardInitializerFactory;
         private readonly ConsoleWrapper _consoleWrapper;
         private readonly BoardPrinter _boardPrinter;
         private readonly ConsoleCoordinatesReader _consoleCoordinateReader;
@@ -12,14 +11,13 @@ namespace Battleships
         private readonly ShotResultMapper _shotResultMapper;
 
         public ConsoleGame(
-            BoardInitializerFactory boardInitializerFactory,
+            BoardInitializer boardInitializer,
             ConsoleWrapper consoleWrapper,
             BoardPrinter boardPrinter,
             ConsoleCoordinatesReader consoleReader,
             CoordinatesMapper coordinatesMapper,
-            ShotResultMapper shotResultMapper)
+            ShotResultMapper shotResultMapper) : base(boardInitializer)
         {
-            _boardInitializerFactory = boardInitializerFactory;
             _consoleWrapper = consoleWrapper;
             _boardPrinter = boardPrinter;
             _consoleCoordinateReader = consoleReader;
@@ -27,25 +25,27 @@ namespace Battleships
             _shotResultMapper = shotResultMapper;
         }
 
-        public void Start()
+        public override Coordinates GetCoordinates()
         {
-            var initializer = _boardInitializerFactory.CreateBoardInitializer();
-            var board = initializer.Initialize();
+            var inputCoordinates = _consoleCoordinateReader.ReadInput();
 
-            while (!board.IsConquered)
-            {
-                var inputCoordinates = _consoleCoordinateReader.ReadInput();
+            return _coordinatesMapper.Map(inputCoordinates);
+        }
 
-                _consoleWrapper.Clear();
+        public override void ShowBoard(Board board)
+        {
+            _consoleWrapper.Print(_boardPrinter.Print(board));
+        }
 
-                var coordinates = _coordinatesMapper.Map(inputCoordinates);
-                var shotResult = _shotResultMapper.Map(board.Check(coordinates));
-
-                _consoleWrapper.Print(_boardPrinter.Print(board));
-                _consoleWrapper.Print(shotResult);
-            }
-
+        public override void ShowGameOverMessage()
+        {
             _consoleWrapper.Print("You won! Game Over!");
+        }
+
+        public override void ShowShotResult(ShotResult shotResult)
+        {
+            _consoleWrapper.Clear();
+            _consoleWrapper.Print(_shotResultMapper.Map(shotResult));
         }
     }
 }

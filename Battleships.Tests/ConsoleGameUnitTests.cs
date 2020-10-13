@@ -1,5 +1,4 @@
 using Battleships.Core;
-using Battleships.IoC;
 using FakeItEasy;
 using NUnit.Framework;
 
@@ -8,7 +7,7 @@ namespace Battleships.Tests
     public class Tests
     {
         private ConsoleGame _subject;
-        private BoardInitializerFactory _boardInitializerFactoryDouble;
+        private BoardInitializer _boardInitializerDouble;
         private ConsoleWrapper _consoleWrapperDouble;
         private BoardPrinter _boardPrinterDouble;
         private ConsoleCoordinatesReader _consoleCoordinateReaderDouble;
@@ -18,7 +17,7 @@ namespace Battleships.Tests
         [SetUp]
         public void Setup()
         {
-            _boardInitializerFactoryDouble = A.Fake<BoardInitializerFactory>();
+            _boardInitializerDouble = A.Fake<BoardInitializer>();
             _consoleWrapperDouble = A.Fake<ConsoleWrapper>();
             _boardPrinterDouble = A.Fake<BoardPrinter>();
             _consoleCoordinateReaderDouble = A.Fake<ConsoleCoordinatesReader>();
@@ -26,7 +25,7 @@ namespace Battleships.Tests
             _shotResultMapperDouble = A.Fake<ShotResultMapper>();
 
             _subject = new ConsoleGame(
-                _boardInitializerFactoryDouble,
+                _boardInitializerDouble,
                 _consoleWrapperDouble,
                 _boardPrinterDouble,
                 _consoleCoordinateReaderDouble,
@@ -88,7 +87,7 @@ namespace Battleships.Tests
         public void ShouldMapShotResult()
         {
             var shotResult = new ShotResult();
-            Board boardDouble = CreateBoardDouble();
+            var boardDouble = CreateBoardDouble();
 
             A.CallTo(() => boardDouble.Check(A<Coordinates>._)).Returns(shotResult);
             StubBoardIsConquered(boardDouble);
@@ -112,19 +111,6 @@ namespace Battleships.Tests
         }
 
         [Test]
-        public void WhileBoardIsNotConquered_ShouldCheckCoordinatesOnTheBoard()
-        {
-            var boardDouble = CreateBoardDouble();
-
-            A.CallTo(() => boardDouble.IsConquered).Returns(true);
-            A.CallTo(() => boardDouble.IsConquered).Returns(false).Twice();
-
-            _subject.Start();
-
-            A.CallTo(() => boardDouble.Check(A<Coordinates>._)).MustHaveHappenedTwiceExactly();
-        }
-
-        [Test]
         public void WhenBoardIsConquered_ShouldReturnGameOverMessage()
         {
             var boardDouble = CreateBoardDouble();
@@ -139,10 +125,8 @@ namespace Battleships.Tests
         private Board CreateBoardDouble()
         {
             var boardDouble = A.Fake<Board>();
-            var initializerDouble = A.Fake<BoardInitializer>();
 
-            A.CallTo(() => _boardInitializerFactoryDouble.CreateBoardInitializer()).Returns(initializerDouble);
-            A.CallTo(() => initializerDouble.Initialize()).Returns(boardDouble);
+            A.CallTo(() => _boardInitializerDouble.Initialize()).Returns(boardDouble);
 
             return boardDouble;
         }
