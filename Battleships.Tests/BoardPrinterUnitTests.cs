@@ -4,8 +4,6 @@ using FluentAssertions;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Battleships.Tests
 {
@@ -48,7 +46,7 @@ namespace Battleships.Tests
         [TestCase(7)]
         [TestCase(8)]
         [TestCase(9)]
-        public void ShouldEachBoardRowContainTenMappedPositionStatesFollowedBySpace(int rowNumber)
+        public void ShouldEachBoardRowContainTenMappedPositionStatesSeparatedBySpace(int rowNumber)
         {
             const string state = "state";
             const int headerOffset = 1;
@@ -57,7 +55,7 @@ namespace Battleships.Tests
             A.CallTo(() => _positionStateMapperDouble.Map(A<PositionState>._)).Returns(state);
 
             _subject.Print(boardDouble).Split(Environment.NewLine)[rowNumber + headerOffset]
-                .Should().Contain(state + ' ', Exactly.Times(Board.Size));
+                .Should().Contain(' ' + state, Exactly.Times(Board.Size));
         }
 
         [TestCase(0)]

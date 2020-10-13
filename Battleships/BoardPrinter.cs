@@ -1,12 +1,13 @@
 ﻿using Battleships.Core;
 using System;
 using System.Linq;
-using System.Text;
 
 namespace Battleships
 {
     internal class BoardPrinter
     {
+        private const string space = " ";
+
         private readonly PositionStateMapper _positionStateMapper;
 
         public BoardPrinter(PositionStateMapper positionStateMapper)
@@ -16,25 +17,25 @@ namespace Battleships
 
         public virtual string Print(Board board)
         {
-            //TODO: refactor
-            var line = new StringBuilder();
-            line.Append("  A B C D E F G H I J");
+            const string header = "  A B C D E F G H I J";
 
-            for (var i = 0; i < Board.Size; i++)
-            {
-                var row = new StringBuilder();
-                row.Append(i + " ");
-                for (var y = 0; y < Board.Size; y++)
-                {
-                    var state = board.Positions.SingleOrDefault(
-                        pos => pos.Coordinates.Horizontal == i && pos.Coordinates.Vertical == y).State;
-                    row.Append(_positionStateMapper.Map(state) + " ");
-                }
+            var boardStringRepresentation =
+                string.Join(Environment.NewLine, board.Positions
+                    .GroupBy(pos => pos.Coordinates.Horizontal)
+                    .OrderBy(pos => pos.Key)
+                    .Select(group => PrintStatesForRow(board, group.Key)));
 
-                line.Append(Environment.NewLine + row);
-            }
+            return $"{header}{Environment.NewLine}{boardStringRepresentation}";
+        }
 
-            return line.ToString();
+        private string PrintStatesForRow(Board board, int rowNumber)
+        {
+            var row = string.Join(space, board.Positions
+                .Where(pos => pos.Coordinates.Horizontal == rowNumber)
+                .OrderBy(pos => pos.Coordinates.Vertical)
+                .Select(pos => _positionStateMapper.Map(pos.State)));
+
+            return $"{rowNumber}{space}{row}";
         }
     }
 }
