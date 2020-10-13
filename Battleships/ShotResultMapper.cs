@@ -6,7 +6,7 @@ namespace Battleships
     {
         public virtual string Map(ShotResult shotResult)
         {
-            return shotResult.IsHit ? $"You hit {shotResult.Ship.NumberOfMasts}-masted ship!" : "Miss!";
+            return shotResult.IsHit ? $"You hit a {shotResult.Ship.Name}!" : "Miss!";
         }
     }
 }

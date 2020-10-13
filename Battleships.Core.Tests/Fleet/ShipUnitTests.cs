@@ -2,14 +2,14 @@
 using NUnit.Framework;
 using System;
 
-namespace Battleships.Core.Tests
+namespace Battleships.Core.Tests.Fleet
 {
     internal class ShipUnitTests
     {
         [Test]
         public void ShouldHaveAtLeastOneMast()
         {
-            Action act = () => new Ship(0);
+            Action act = () => new DummyShip(0);
 
             act.Should().Throw<ArgumentException>().WithMessage("Ship must have at least one mast.");
         }
@@ -17,7 +17,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void WhenAllMastsHit_ShouldBeSunk()
         {
-            var subject = new Ship(4);
+            var subject = new DummyShip(4);
 
             subject.ReportHit();
             subject.ReportHit();

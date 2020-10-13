@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Battleships.Core
+namespace Battleships.Core.Fleet
 {
     internal class FleetConfigurationProvider
     {
@@ -9,9 +8,9 @@ namespace Battleships.Core
         {
             return new List<Ship>
             {
-                new Ship(5),
-                new Ship(4),
-                new Ship(4)
+                new Destroyer(),
+                new Battleship(),
+                new Battleship()
             };
         }
     }

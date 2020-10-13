@@ -1,4 +1,5 @@
-﻿using FakeItEasy;
+﻿using Battleships.Core.Fleet;
+using FakeItEasy;
 using FluentAssertions;
 using NUnit.Framework;
 using System.Collections.Generic;
@@ -29,7 +30,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void ShouldCreatePositionsForConfiguredFleet()
         {
-            var configuredShips = new List<Ship> { new Ship(8), new Ship(1) };
+            var configuredShips = new List<Ship> { new DummyShip(8), new DummyShip(1) };
 
             A.CallTo(() => _fleetConfigurationProviderDouble.Get()).Returns(configuredShips);
 
@@ -43,7 +44,7 @@ namespace Battleships.Core.Tests
         public void ShouldPutPositionsOnBoard()
         {
             var coordinates = new Coordinates(5, 5);
-            var ship = new Ship(1);
+            var ship = new DummyShip(1);
 
             A.CallTo(() => _shipPositionerDouble.CreatePositions(A<List<Ship>>._)).Returns(
                 new List<Position>

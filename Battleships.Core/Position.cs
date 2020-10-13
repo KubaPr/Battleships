@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Battleships.Core.Fleet;
+using System;
 
 namespace Battleships.Core
 {

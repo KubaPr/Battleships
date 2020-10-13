@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Battleships.Core
+namespace Battleships.Core.Fleet
 {
     internal class FleetPositioner
     {
@@ -17,7 +17,7 @@ namespace Battleships.Core
         {
             var positions = new List<Position>();
 
-            foreach(var ship in shipsToBePositioned)
+            foreach (var ship in shipsToBePositioned)
             {
                 var shipPositions = GeneratePositions(ship, positions);
 
@@ -33,7 +33,7 @@ namespace Battleships.Core
         {
             var generatedPositions = _randomPositioner.GeneratePositionsForShip(ship);
 
-            while(AreShipsColliding(generatedPositions, positions))
+            while (AreShipsColliding(generatedPositions, positions))
             {
                 generatedPositions.Clear();
                 generatedPositions = _randomPositioner.GeneratePositionsForShip(ship);
@@ -60,9 +60,9 @@ namespace Battleships.Core
         {
             var unoccupiedPositions = new List<Position>();
 
-            for(var horizontal = 0; horizontal < Board.Size; horizontal++)
+            for (var horizontal = 0; horizontal < Board.Size; horizontal++)
             {
-                for(var vertical = 0; vertical < Board.Size; vertical++)
+                for (var vertical = 0; vertical < Board.Size; vertical++)
                 {
                     if (!IsTaken(occupiedPositions, horizontal, vertical))
                     {

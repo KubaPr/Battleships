@@ -1,4 +1,5 @@
 ﻿using Battleships.Core;
+using Battleships.Core.Fleet;
 using System;
 
 namespace Battleships.IoC

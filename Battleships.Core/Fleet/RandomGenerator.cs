@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Battleships.Core
+namespace Battleships.Core.Fleet
 {
     internal class RandomGenerator
     {

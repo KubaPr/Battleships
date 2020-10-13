@@ -1,14 +1,15 @@
-﻿using FakeItEasy;
+﻿using Battleships.Core.Fleet;
+using FakeItEasy;
 using FluentAssertions;
 using NUnit.Framework;
 using System;
 using System.Linq;
 
-namespace Battleships.Core.Tests
+namespace Battleships.Core.Tests.Fleet
 {
     internal class RandomPositionerUnitTests
     {
-        private readonly Ship _dummyShip = new Ship(1);
+        private readonly Ship _dummyShip = new DummyShip(1);
 
         private RandomPositioner _subject;
         private RandomGenerator _randomGeneratorDouble;
@@ -29,7 +30,7 @@ namespace Battleships.Core.Tests
             A.CallTo(() => _randomGeneratorDouble.GenerateRandomBool()).Returns(true);
             A.CallTo(() => _randomGeneratorDouble.GenerateRandomNumber(A<int>._, A<int>._)).Returns(initialCoordinate);
 
-            _subject.GeneratePositionsForShip(new Ship(3)).Select(position => position.Coordinates.Horizontal).
+            _subject.GeneratePositionsForShip(new DummyShip(3)).Select(position => position.Coordinates.Horizontal).
                 Should().BeEquivalentTo(initialCoordinate, initialCoordinate + 1, initialCoordinate + 2);
         }
 
@@ -41,7 +42,7 @@ namespace Battleships.Core.Tests
             A.CallTo(() => _randomGeneratorDouble.GenerateRandomBool()).Returns(false);
             StubRandomNumberGeneration(initialCoordinate);
 
-            _subject.GeneratePositionsForShip(new Ship(3)).Select(position => position.Coordinates.Vertical).
+            _subject.GeneratePositionsForShip(new DummyShip(3)).Select(position => position.Coordinates.Vertical).
                 Should().BeEquivalentTo(initialCoordinate, initialCoordinate + 1, initialCoordinate + 2);
         }
 
@@ -58,7 +59,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void WhenPlacingShipHorizontally_ShouldGenerateHorizontalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize()
         {
-            var ship = new Ship(4);
+            var ship = new DummyShip(4);
 
             A.CallTo(() => _randomGeneratorDouble.GenerateRandomBool()).Returns(true);
 
@@ -81,7 +82,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void WhenPlacingShipVertically_ShouldGenerateVerticalInitialPositionBetweenZeroAndBoardSizeMinusOneMinusShipSize()
         {
-            var ship = new Ship(4);
+            var ship = new DummyShip(4);
 
             A.CallTo(() => _randomGeneratorDouble.GenerateRandomBool()).Returns(false);
 
@@ -94,7 +95,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void ShouldReturnShipWithAllPositions()
         {
-            var ship = new Ship(4);
+            var ship = new DummyShip(4);
 
             _subject.GeneratePositionsForShip(ship).Select(position => position.Occupant).Distinct().Single()
                 .Should().Be(ship);
@@ -103,7 +104,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void ShouldReturnAsManyPositionsAsMasts()
         {
-            var ship = new Ship(3);
+            var ship = new DummyShip(3);
 
             StubRandomNumberGeneration(6);
 
@@ -115,7 +116,7 @@ namespace Battleships.Core.Tests
         {
             var subject = new RandomPositioner(_randomGeneratorDouble);
 
-            Action act = () => subject.GeneratePositionsForShip(new Ship(Board.Size + 1));
+            Action act = () => subject.GeneratePositionsForShip(new DummyShip(Board.Size + 1));
 
             act.Should().Throw<ArgumentException>().WithMessage("Ship cannot be bigger than the board");
         }

@@ -1,10 +1,11 @@
-﻿using FakeItEasy;
+﻿using Battleships.Core.Fleet;
+using FakeItEasy;
 using FluentAssertions;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Battleships.Core.Tests
+namespace Battleships.Core.Tests.Fleet
 {
     internal class FleetPositionerUnitTests
     {
@@ -30,7 +31,7 @@ namespace Battleships.Core.Tests
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._))
                 .Returns(anotherShipPositions).Once();
 
-            _subject.CreatePositions(new List<Ship> { new Ship(1), new Ship(2) }).Should()
+            _subject.CreatePositions(new List<Ship> { new DummyShip(1), new DummyShip(2) }).Should()
                 .Contain(firstShipPositions).And
                 .Contain(anotherShipPositions);
         }
@@ -59,11 +60,11 @@ namespace Battleships.Core.Tests
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._)).Returns(positions).Once();
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._)).Returns(tooClosePositions).Once();
 
-            _subject.CreatePositions(new List<Ship> { new Ship(1), new Ship(2), new Ship(3) });
+            _subject.CreatePositions(new List<Ship> { new DummyShip(1), new DummyShip(2), new DummyShip(3) });
 
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._))
                 .MustHaveHappened(numberOfShipsOnTheBoard + 1, Times.Exactly);
-         }
+        }
 
         [TestCase(0, 0, 0, 2)]
         [TestCase(0, 0, 2, 0)]
@@ -85,7 +86,7 @@ namespace Battleships.Core.Tests
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._)).Returns(positions).Once();
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._)).Returns(tooClosePositions).Once();
 
-            _subject.CreatePositions(new List<Ship> { new Ship(1), new Ship(2), new Ship(3) });
+            _subject.CreatePositions(new List<Ship> { new DummyShip(1), new DummyShip(2), new DummyShip(3) });
 
             A.CallTo(() => _randomPositionerDouble.GeneratePositionsForShip(A<Ship>._))
                 .MustHaveHappened(numberOfShipsOnTheBoard, Times.Exactly);
@@ -94,7 +95,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void ShouldReturnUnoccupiedPositionsWhereThereAreNoShips()
         {
-            var positions = _subject.CreatePositions(new List<Ship> { new Ship(1) });
+            var positions = _subject.CreatePositions(new List<Ship> { new DummyShip(1) });
 
             positions.Where(position => !position.IsOccupied).Should().NotBeNullOrEmpty();
         }
@@ -102,7 +103,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void ShouldReturnAsManyPositionsAsOnGameBoard()
         {
-            var positions = _subject.CreatePositions(new List<Ship> { new Ship(4), new Ship(2) });
+            var positions = _subject.CreatePositions(new List<Ship> { new DummyShip(4), new DummyShip(2) });
 
             positions.Should().HaveCount(Board.Size * Board.Size);
         }
@@ -126,7 +127,7 @@ namespace Battleships.Core.Tests
                     new Position(new Coordinates(1, 9))
                 });
 
-            var positions = _subject.CreatePositions(new List<Ship> { new Ship(2) });
+            var positions = _subject.CreatePositions(new List<Ship> { new DummyShip(2) });
 
             //TODO: Go back to this and think if this could be more readable
             positions.Where(position => position.Coordinates.Vertical == coordinate)

@@ -1,4 +1,5 @@
 ﻿using Battleships.Core;
+using Battleships.Core.Fleet;
 using FluentAssertions;
 using NUnit.Framework;
 
@@ -15,9 +16,11 @@ namespace Battleships.Tests
         }
 
         [Test]
-        public void WhenResultIsHit_ShouldReturnMessageWithNumberOfMastsOfHitShip()
+        public void WhenResultIsHit_ShouldReturnMessageWithShipName()
         {
-            _subject.Map(new ShotResult(new Ship(2))).Should().Be("You hit 2-masted ship!");
+            var ship = new Destroyer();
+
+            _subject.Map(new ShotResult(ship)).Should().Be($"You hit a {ship.Name}!");
         }
 
         [Test]

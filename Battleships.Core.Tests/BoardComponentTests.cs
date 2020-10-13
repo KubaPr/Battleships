@@ -13,8 +13,8 @@ namespace Battleships.Core.Tests
             var subject = new Board(
                 new List<Position>
                 {
-                    new Position(firstShot, new Ship(1)),
-                    new Position(new Coordinates(1, 1), new Ship(1))
+                    new Position(firstShot, new DummyShip(1)),
+                    new Position(new Coordinates(1, 1), new DummyShip(1))
                 });
 
             subject.Check(firstShot);
@@ -28,13 +28,13 @@ namespace Battleships.Core.Tests
             var firstShot = new Coordinates(0, 0);
             var secondShot = new Coordinates(1, 1);
             var thirdShot = new Coordinates(1, 2);
-            var doubleMastedShip = new Ship(2);
+            var doubleMastedShip = new DummyShip(2);
 
             var subject = new Board(
                 new List<Position>
                 {
                     new Position(new Coordinates(0,1), null),
-                    new Position(firstShot, new Ship(1)),
+                    new Position(firstShot, new DummyShip(1)),
                     new Position(secondShot, doubleMastedShip),
                     new Position(thirdShot, doubleMastedShip)
                 });

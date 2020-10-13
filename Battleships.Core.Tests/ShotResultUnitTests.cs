@@ -8,7 +8,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void WhenCreatedWithShip_ShouldShotResultBeHit()
         {
-            new ShotResult(new Ship(1)).IsHit.Should().BeTrue();
+            new ShotResult(new DummyShip(1)).IsHit.Should().BeTrue();
         }
 
         [Test]

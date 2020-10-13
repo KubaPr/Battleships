@@ -1,4 +1,5 @@
-﻿using FakeItEasy;
+﻿using Battleships.Core.Fleet;
+using FakeItEasy;
 using FluentAssertions;
 using NUnit.Framework;
 using System;
@@ -20,7 +21,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void WhenHasOccupant_ShouldBeOccupied()
         {
-            new Position(DummyCoordinates, new Ship(1)).IsOccupied.Should().BeTrue();
+            new Position(DummyCoordinates, new DummyShip(1)).IsOccupied.Should().BeTrue();
         }
 
         [Test]
@@ -83,7 +84,7 @@ namespace Battleships.Core.Tests
 
         private static Ship CreateFakeShip()
         {
-            return A.Fake<Ship>(opt => opt.WithArgumentsForConstructor(() => new Ship(1)));
+            return A.Fake<Ship>(opt => opt.WithArgumentsForConstructor(() => new DummyShip(1)));
         }
     }
 }

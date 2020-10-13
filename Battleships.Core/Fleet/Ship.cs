@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace Battleships.Core
+namespace Battleships.Core.Fleet
 {
-    public class Ship
+    public abstract class Ship
     {
-        public int NumberOfMasts { get; }
+        public abstract string Name { get; }
+        internal int NumberOfMasts { get; }
         internal bool IsSunk => _hitMastsCount == NumberOfMasts;
         internal virtual void ReportHit() => _hitMastsCount++;
 

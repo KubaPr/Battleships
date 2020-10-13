@@ -1,4 +1,5 @@
-﻿using FakeItEasy;
+﻿using Battleships.Core.Fleet;
+using FakeItEasy;
 using FluentAssertions;
 using NUnit.Framework;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace Battleships.Core.Tests
         {
             var occupiedCoordinates = new Coordinates(0, 0);
 
-            var subject = CreateBoard(CreatePosition(occupiedCoordinates, occupant: new Ship(1)));
+            var subject = CreateBoard(CreatePosition(occupiedCoordinates, occupant: new DummyShip(1)));
 
             subject.Check(occupiedCoordinates).IsHit.Should().BeTrue();
         }
@@ -40,7 +41,7 @@ namespace Battleships.Core.Tests
         [Test]
         public void WhenPositionIsOccupied_ShouldReturnOccupant()
         {
-            var ship = new Ship(1);
+            var ship = new DummyShip(1);
             var occupiedCoordinates = new Coordinates(0, 0);
 
             var subject = CreateBoard(CreatePosition(occupiedCoordinates, occupant: ship));

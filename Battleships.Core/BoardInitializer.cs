@@ -1,4 +1,6 @@
-﻿namespace Battleships.Core
+﻿using Battleships.Core.Fleet;
+
+namespace Battleships.Core
 {
     public class BoardInitializer
     {

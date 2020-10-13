@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Battleships.Core
+namespace Battleships.Core.Fleet
 {
     internal class RandomPositioner
     {
