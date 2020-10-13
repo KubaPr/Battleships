@@ -10,12 +10,11 @@ namespace Battleships
 
             var game = new ConsoleGame(
                 new IoC.BoardInitializerFactory(),
-                new ConsolePrinter(),
+                new ConsoleWrapper(),
                 new BoardPrinter(
                     new PositionStateMapper()),
                 new ConsoleCoordinatesReader(
-                    new ConsolePrinter(),
-                    new ConsoleReader()),
+                    new ConsoleWrapper()),
                 new CoordinatesMapper(),
                 new ShotResultMapper());
 

@@ -5,7 +5,7 @@ namespace Battleships
     internal class ConsoleGame
     {
         private readonly BoardInitializerFactory _boardInitializerFactory;
-        private readonly ConsolePrinter _consolePrinter;
+        private readonly ConsoleWrapper _consoleWrapper;
         private readonly BoardPrinter _boardPrinter;
         private readonly ConsoleCoordinatesReader _consoleCoordinateReader;
         private readonly CoordinatesMapper _coordinatesMapper;
@@ -13,14 +13,14 @@ namespace Battleships
 
         public ConsoleGame(
             BoardInitializerFactory boardInitializerFactory,
-            ConsolePrinter consolePrinter,
+            ConsoleWrapper consoleWrapper,
             BoardPrinter boardPrinter,
             ConsoleCoordinatesReader consoleReader,
             CoordinatesMapper coordinatesMapper,
             ShotResultMapper shotResultMapper)
         {
             _boardInitializerFactory = boardInitializerFactory;
-            _consolePrinter = consolePrinter;
+            _consoleWrapper = consoleWrapper;
             _boardPrinter = boardPrinter;
             _consoleCoordinateReader = consoleReader;
             _coordinatesMapper = coordinatesMapper;
@@ -34,15 +34,18 @@ namespace Battleships
 
             while (!board.IsConquered)
             {
-                _consolePrinter.Print(_boardPrinter.Print(board));
-
                 var inputCoordinates = _consoleCoordinateReader.ReadInput();
+
+                _consoleWrapper.Clear();
+
                 var coordinates = _coordinatesMapper.Map(inputCoordinates);
                 var shotResult = _shotResultMapper.Map(board.Check(coordinates));
 
-                //TODO: clear console
-                _consolePrinter.Print(shotResult);
+                _consoleWrapper.Print(_boardPrinter.Print(board));
+                _consoleWrapper.Print(shotResult);
             }
+
+            _consoleWrapper.Print("You won! Game Over!");
         }
     }
 }

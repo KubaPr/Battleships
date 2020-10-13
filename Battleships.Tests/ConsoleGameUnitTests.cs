@@ -9,7 +9,7 @@ namespace Battleships.Tests
     {
         private ConsoleGame _subject;
         private BoardInitializerFactory _boardInitializerFactoryDouble;
-        private ConsolePrinter _consolePrinterDouble;
+        private ConsoleWrapper _consoleWrapperDouble;
         private BoardPrinter _boardPrinterDouble;
         private ConsoleCoordinatesReader _consoleCoordinateReaderDouble;
         private CoordinatesMapper _inputMapperDouble;
@@ -19,7 +19,7 @@ namespace Battleships.Tests
         public void Setup()
         {
             _boardInitializerFactoryDouble = A.Fake<BoardInitializerFactory>();
-            _consolePrinterDouble = A.Fake<ConsolePrinter>();
+            _consoleWrapperDouble = A.Fake<ConsoleWrapper>();
             _boardPrinterDouble = A.Fake<BoardPrinter>();
             _consoleCoordinateReaderDouble = A.Fake<ConsoleCoordinatesReader>();
             _inputMapperDouble = A.Fake<CoordinatesMapper>();
@@ -27,7 +27,7 @@ namespace Battleships.Tests
 
             _subject = new ConsoleGame(
                 _boardInitializerFactoryDouble,
-                _consolePrinterDouble,
+                _consoleWrapperDouble,
                 _boardPrinterDouble,
                 _consoleCoordinateReaderDouble,
                 _inputMapperDouble,
@@ -44,7 +44,7 @@ namespace Battleships.Tests
 
             _subject.Start();
 
-            A.CallTo(() => _consolePrinterDouble.Print(board)).MustHaveHappened();
+            A.CallTo(() => _consoleWrapperDouble.Print(board)).MustHaveHappened();
         }
 
         [Test]
@@ -108,7 +108,7 @@ namespace Battleships.Tests
 
             _subject.Start();
 
-            A.CallTo(() => _consolePrinterDouble.Print(mappedResult)).MustHaveHappened();
+            A.CallTo(() => _consoleWrapperDouble.Print(mappedResult)).MustHaveHappened();
         }
 
         [Test]
@@ -122,6 +122,18 @@ namespace Battleships.Tests
             _subject.Start();
 
             A.CallTo(() => boardDouble.Check(A<Coordinates>._)).MustHaveHappenedTwiceExactly();
+        }
+
+        [Test]
+        public void WhenBoardIsConquered_ShouldReturnGameOverMessage()
+        {
+            var boardDouble = CreateBoardDouble();
+
+            A.CallTo(() => boardDouble.IsConquered).Returns(true);
+
+            _subject.Start();
+
+            A.CallTo(() => _consoleWrapperDouble.Print("You won! Game Over!")).MustHaveHappened();
         }
 
         private Board CreateBoardDouble()

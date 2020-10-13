@@ -4,25 +4,23 @@ namespace Battleships
 {
     internal class ConsoleCoordinatesReader
     {
-        private readonly ConsolePrinter _consolePrinter;
-        private readonly ConsoleReader _consoleReader;
+        private readonly ConsoleWrapper _consoleWrapper;
         private readonly Regex _regex;
 
-        public ConsoleCoordinatesReader(ConsolePrinter consolePrinter, ConsoleReader consoleReader)
+        public ConsoleCoordinatesReader(ConsoleWrapper consoleWrapper)
         {
-            _consolePrinter = consolePrinter;
-            _consoleReader = consoleReader;
+            _consoleWrapper = consoleWrapper;
 
-             _regex = new Regex(@"^[a-j][0-9]{1}$", RegexOptions.IgnoreCase);
+            _regex = new Regex(@"^[a-j][0-9]{1}$", RegexOptions.IgnoreCase);
         }
 
         public virtual string ReadInput()
         {
-            var input = _consoleReader.Read();
+            var input = _consoleWrapper.Read();
 
             if (!IsValid(input))
             {
-                _consolePrinter.Print("Invalid shot. Shoot between A0 and J9");
+                _consoleWrapper.Print("Invalid shot. Shoot between A0 and J9");
 
                 return ReadInput();
             };
