@@ -8,7 +8,7 @@ To shoot you simply need to write coordinates to your console, i.e. A0, E5, G4, 
 
 ## Prerequisites
 
-This game needs .net core 3.1 and internet connection to run
+This game needs .net core 3.1 to run
 
 ## Running it
 
