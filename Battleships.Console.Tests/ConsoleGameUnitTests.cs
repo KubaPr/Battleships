@@ -1,3 +1,4 @@
+using Battleships.Console;
 using Battleships.Core;
 using FakeItEasy;
 using NUnit.Framework;

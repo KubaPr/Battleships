@@ -1,6 +1,6 @@
 ﻿using Battleships.Core;
 
-namespace Battleships
+namespace Battleships.Console
 {
     internal class ShotResultMapper
     {

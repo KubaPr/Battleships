@@ -4,7 +4,7 @@ using System;
 
 namespace Battleships.IoC
 {
-    public class BoardInitializerFactory
+    internal class BoardInitializerFactory
     {
         public BoardInitializer CreateBoardInitializer()
         {

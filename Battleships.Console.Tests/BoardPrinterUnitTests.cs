@@ -5,7 +5,7 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 
-namespace Battleships.Tests
+namespace Battleships.Console.Tests
 {
     internal class BoardPrinterUnitTests
     {

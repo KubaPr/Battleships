@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-namespace Battleships
+namespace Battleships.Console
 {
     internal class CoordinatesMapper
     {

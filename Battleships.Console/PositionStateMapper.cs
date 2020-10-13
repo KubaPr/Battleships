@@ -1,7 +1,7 @@
 ﻿using Battleships.Core;
 using System;
 
-namespace Battleships
+namespace Battleships.Console
 {
     internal class PositionStateMapper
     {
@@ -15,7 +15,7 @@ namespace Battleships
                     return "O";
                 case PositionState.Unchecked:
                     return "~"; ;
-                default: 
+                default:
                     throw new ArgumentException();
             }
         }

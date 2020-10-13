@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Battleships.Console\Battleships.Console.csproj" />
     <ProjectReference Include="..\Battleships.Core\Battleships.Core.csproj" />
   </ItemGroup>
 

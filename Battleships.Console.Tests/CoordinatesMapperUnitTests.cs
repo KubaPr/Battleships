@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using Battleships.Console;
+using FluentAssertions;
 using NUnit.Framework;
 
 namespace Battleships.Tests

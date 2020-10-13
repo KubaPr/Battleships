@@ -1,4 +1,5 @@
-﻿using FakeItEasy;
+﻿using Battleships.Console;
+using FakeItEasy;
 using FluentAssertions;
 using NUnit.Framework;
 

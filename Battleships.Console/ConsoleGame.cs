@@ -1,8 +1,8 @@
 ﻿using Battleships.Core;
 
-namespace Battleships
+namespace Battleships.Console
 {
-    internal class ConsoleGame : Game
+    public class ConsoleGame : Game
     {
         private readonly ConsoleWrapper _consoleWrapper;
         private readonly BoardPrinter _boardPrinter;
@@ -10,7 +10,7 @@ namespace Battleships
         private readonly CoordinatesMapper _coordinatesMapper;
         private readonly ShotResultMapper _shotResultMapper;
 
-        public ConsoleGame(
+        internal ConsoleGame(
             BoardInitializer boardInitializer,
             ConsoleWrapper consoleWrapper,
             BoardPrinter boardPrinter,

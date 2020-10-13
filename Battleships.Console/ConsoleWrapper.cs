@@ -1,22 +1,22 @@
-﻿using System;
+﻿using SysConsole = System.Console;
 
-namespace Battleships
+namespace Battleships.Console
 {
     internal class ConsoleWrapper
     {
         public virtual void Print(string stringToPrint)
         {
-            Console.WriteLine(stringToPrint);
+            SysConsole.WriteLine(stringToPrint);
         }
 
         public virtual string Read()
         {
-            return Console.ReadLine();
+            return SysConsole.ReadLine();
         }
 
         public virtual void Clear()
         {
-            Console.Clear();
+            SysConsole.Clear();
         }
     }
 }
