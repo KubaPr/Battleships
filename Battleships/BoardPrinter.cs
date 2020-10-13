@@ -16,6 +16,7 @@ namespace Battleships
 
         public virtual string Print(Board board)
         {
+            //TODO: refactor
             var line = new StringBuilder();
             line.Append("  A B C D E F G H I J");
 
