@@ -1,7 +1,5 @@
 ﻿using Battleships.IoC;
 
-using SystemConsole = System.Console;
-
 namespace Battleships
 {
     class Program
