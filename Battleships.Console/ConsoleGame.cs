@@ -47,7 +47,8 @@ namespace Battleships.Console
 
         private void ShowGameStartMessage()
         {
-            _consoleWrapper.Print("Shot between A0 and J9 to start a new game!");
+            _consoleWrapper.Print(
+                "Shot between A0 and J9 to start a new game! Two Destroyers (4 masts) and a Battleship (5 masts) are already positioned.");
         }
 
         private Coordinates GetCoordinates()

@@ -41,7 +41,8 @@ namespace Battleships.Tests
 
             _subject.Start();
 
-            A.CallTo(() => _consoleWrapperDouble.Print("Shot between A0 and J9 to start a new game!"))
+            A.CallTo(() => _consoleWrapperDouble.Print(
+                "Shot between A0 and J9 to start a new game! Two Destroyers (4 masts) and a Battleship (5 masts) are already positioned."))
                 .MustHaveHappenedOnceExactly();
         }
 
