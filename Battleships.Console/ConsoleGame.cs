@@ -2,13 +2,14 @@
 
 namespace Battleships.Console
 {
-    public class ConsoleGame : Game
+    public class ConsoleGame
     {
         private readonly ConsoleWrapper _consoleWrapper;
         private readonly BoardPrinter _boardPrinter;
         private readonly ConsoleCoordinatesReader _consoleCoordinateReader;
         private readonly CoordinatesMapper _coordinatesMapper;
         private readonly ShotResultMapper _shotResultMapper;
+        private readonly BoardInitializer _boardInitializer;
 
         internal ConsoleGame(
             BoardInitializer boardInitializer,
@@ -16,8 +17,9 @@ namespace Battleships.Console
             BoardPrinter boardPrinter,
             ConsoleCoordinatesReader consoleReader,
             CoordinatesMapper coordinatesMapper,
-            ShotResultMapper shotResultMapper) : base(boardInitializer)
+            ShotResultMapper shotResultMapper)
         {
+            _boardInitializer = boardInitializer;
             _consoleWrapper = consoleWrapper;
             _boardPrinter = boardPrinter;
             _consoleCoordinateReader = consoleReader;
@@ -25,27 +27,49 @@ namespace Battleships.Console
             _shotResultMapper = shotResultMapper;
         }
 
-        public override Coordinates GetCoordinates()
+        public void Start()
+        {
+            var board = _boardInitializer.Initialize();
+
+            ShowGameStartMessage();
+
+            while (!board.IsConquered)
+            {
+                var coordinates = GetCoordinates();
+                var shotResult = board.Check(coordinates);
+                _consoleWrapper.Clear();
+                ShowShotResult(shotResult);
+                ShowBoard(board);
+            }
+
+            ShowGameOverMessage();
+        }
+
+        private void ShowGameStartMessage()
+        {
+            _consoleWrapper.Print("Shot between A0 and J9 to start a new game!");
+        }
+
+        private Coordinates GetCoordinates()
         {
             var inputCoordinates = _consoleCoordinateReader.ReadInput();
 
             return _coordinatesMapper.Map(inputCoordinates);
         }
 
-        public override void ShowBoard(Board board)
+        private void ShowShotResult(ShotResult shotResult)
+        {
+            _consoleWrapper.Print(_shotResultMapper.Map(shotResult));
+        }
+
+        private void ShowBoard(Board board)
         {
             _consoleWrapper.Print(_boardPrinter.Print(board));
         }
 
-        public override void ShowGameOverMessage()
+        private void ShowGameOverMessage()
         {
             _consoleWrapper.Print("You won! Game Over!");
-        }
-
-        public override void ShowShotResult(ShotResult shotResult)
-        {
-            _consoleWrapper.Clear();
-            _consoleWrapper.Print(_shotResultMapper.Map(shotResult));
         }
     }
 }

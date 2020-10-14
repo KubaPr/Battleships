@@ -15,20 +15,20 @@ namespace Battleships.Console
 
         private static int Map(char input)
         {
-            switch (input)
+            return input switch
             {
-                case 'A': return 0;
-                case 'B': return 1;
-                case 'C': return 2;
-                case 'D': return 3;
-                case 'E': return 4;
-                case 'F': return 5;
-                case 'G': return 6;
-                case 'H': return 7;
-                case 'I': return 8;
-                case 'J': return 9;
-                default: throw new ArgumentException();
-            }
+                'A' => 0,
+                'B' => 1,
+                'C' => 2,
+                'D' => 3,
+                'E' => 4,
+                'F' => 5,
+                'G' => 6,
+                'H' => 7,
+                'I' => 8,
+                'J' => 9,
+                _ => throw new ArgumentException(),
+            };
         }
     }
 }

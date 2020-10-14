@@ -24,7 +24,7 @@ namespace Battleships.Core
                 State = PositionState.Miss;
                 return;
             }
-                
+
             if (State == PositionState.Unchecked)
             {
                 Occupant.ReportHit();

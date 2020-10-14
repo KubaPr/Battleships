@@ -35,6 +35,17 @@ namespace Battleships.Tests
         }
 
         [Test]
+        public void ShouldShowGameStartMessage()
+        {
+            StubBoardIsConquered();
+
+            _subject.Start();
+
+            A.CallTo(() => _consoleWrapperDouble.Print("Shot between A0 and J9 to start a new game!"))
+                .MustHaveHappenedOnceExactly();
+        }
+
+        [Test]
         public void ShouldPrintBoard()
         {
             const string board = "board";
